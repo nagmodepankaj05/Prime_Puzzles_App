@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pp_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20sp"
+        android:padding="16dp">
+
+        <!-- ================= HEADER ================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- Back Button -->
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Exit Quiz"
+                android:src="@android:drawable/ic_media_previous"
+                android:tint="@color/pp_white" />
+
+            <!-- Category -->
+            <TextView
+                android:id="@+id/quizCategory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="UPSC"
+                android:textColor="@color/pp_white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Question Counter + Timer -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!-- Question Counter -->
+                <TextView
+                    android:id="@+id/questionCounter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="1 / 10"
+                    android:textColor="@color/pp_text_secondary"
+                    android:textSize="14sp" />
+
+                <!-- Timer -->
+                <TextView
+                    android:id="@+id/timerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pp_card"
+                    android:padding="10dp"
+                    android:text="30"
+                    android:textColor="@color/pp_white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- ================= PROGRESS BAR ================= -->
+
+        <ProgressBar
+            android:id="@+id/questionProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="18dp"
+            android:max="10"
+            android:progress="1" />
+
+
+        <!-- ================= LEVEL ================= -->
+
+        <TextView
+            android:id="@+id/quizLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:gravity="center"
+            android:text="Level 1"
+            android:textColor="@color/pp_text_secondary"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/scoreText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="⭐ Points: 0"
+            android:textColor="@color/pp_white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <!-- ================= QUESTION ================= -->
+
+        <TextView
+            android:id="@+id/questionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/pp_card"
+            android:gravity="center"
+            android:minHeight="150dp"
+            android:padding="22dp"
+            android:text="Question will appear here"
+            android:textColor="@color/pp_white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Lifelines -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- 50:50 -->
+            <Button
+                android:id="@+id/fiftyFiftyButton"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
+                android:text="50:50"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <!-- Skip -->
+            <Button
+                android:id="@+id/skipButton"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:text="SKIP"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <!-- Audience Poll -->
+            <Button
+                android:id="@+id/audienceButton"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:layout_marginStart="6dp"
+                android:text="POLL"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- ================= OPTION A ================= -->
+
+        <TextView
+            android:id="@+id/optionA"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/pp_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="A. Option A"
+            android:textColor="@color/pp_white"
+            android:textSize="16sp" />
+
+
+        <!-- ================= OPTION B ================= -->
+
+        <TextView
+            android:id="@+id/optionB"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/pp_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="B. Option B"
+            android:textColor="@color/pp_white"
+            android:textSize="16sp" />
+
+
+        <!-- ================= OPTION C ================= -->
+
+        <TextView
+            android:id="@+id/optionC"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/pp_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="C. Option C"
+            android:textColor="@color/pp_white"
+            android:textSize="16sp" />
+
+
+        <!-- ================= OPTION D ================= -->
+
+        <TextView
+            android:id="@+id/optionD"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/pp_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="D. Option D"
+            android:textColor="@color/pp_white"
+            android:textSize="16sp" />
+
+
+        <!-- ================= NEXT BUTTON ================= -->
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="24dp"
+            android:text="NEXT"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <!-- Bottom Space -->
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+    </LinearLayout>
+
+</ScrollView>

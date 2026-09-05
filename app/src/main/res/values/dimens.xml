@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="pp_screen_padding">20dp</dimen>
+
+    <dimen name="pp_card_radius">16dp</dimen>
+
+    <dimen name="pp_button_height">54dp</dimen>
+
+    <dimen name="pp_title_size">28sp</dimen>
+
+    <dimen name="pp_heading_size">22sp</dimen>
+
+    <dimen name="pp_body_size">16sp</dimen>
+
+</resources>

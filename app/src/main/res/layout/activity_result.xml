@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pp_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Trophy -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="🏆"
+            android:textSize="70sp" />
+
+        <!-- Result Title -->
+        <TextView
+            android:id="@+id/resultTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Quiz Completed!"
+            android:textColor="@color/pp_white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!-- Category -->
+        <TextView
+            android:id="@+id/resultCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="UPSC • Level 1"
+            android:textColor="@color/pp_text_secondary"
+            android:textSize="16sp" />
+
+        <!-- Score Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/pp_card"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YOUR SCORE"
+                android:textColor="@color/pp_text_secondary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/scoreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="8 / 10"
+                android:textColor="@color/pp_white"
+                android:textSize="42sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/percentageText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="80%"
+                android:textColor="@color/pp_text_secondary"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <!-- Result Message -->
+        <TextView
+            android:id="@+id/resultMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="Excellent! Keep going!"
+            android:textColor="@color/pp_white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Unlock Message -->
+        <TextView
+            android:id="@+id/unlockMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="🔓 Level 2 Unlocked!"
+            android:textColor="@color/pp_white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Next Level -->
+        <Button
+            android:id="@+id/nextLevelButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:text="NEXT LEVEL"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Retry -->
+        <Button
+            android:id="@+id/retryButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:text="RETRY LEVEL"
+            android:textSize="16sp" />
+
+        <!-- Back to Levels -->
+        <Button
+            android:id="@+id/backToLevelsButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:text="BACK TO LEVELS"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</ScrollView>

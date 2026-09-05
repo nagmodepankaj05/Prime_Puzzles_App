@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pp_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15sp"
+        android:padding="@dimen/pp_screen_padding">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- Back Button -->
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Back"
+                android:src="@android:drawable/ic_media_previous"
+                android:tint="@color/pp_white" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Choose Category"
+                android:textColor="@color/pp_white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <!-- Empty space to keep title centered -->
+            <Space
+                android:layout_width="48dp"
+                android:layout_height="48dp" />
+
+        </LinearLayout>
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Select a category to start your puzzle"
+            android:textColor="@color/pp_text_secondary"
+            android:textSize="14sp" />
+
+        <!-- Category 1 -->
+        <LinearLayout
+            android:id="@+id/generalKnowledgeCard"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/pp_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:gravity="center"
+                android:text="🧠"
+                android:textSize="32sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="General Knowledge"
+                    android:textColor="@color/pp_white"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Mixed questions"
+                    android:textColor="@color/pp_text_secondary"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="›"
+                android:textColor="@color/pp_white"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <!-- Category 2 -->
+        <LinearLayout
+            android:id="@+id/computerCard"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/pp_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:gravity="center"
+                android:text="💻"
+                android:textSize="32sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Computer &amp; Technology"
+                    android:textColor="@color/pp_white"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Programming and technology"
+                    android:textColor="@color/pp_text_secondary"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="›"
+                android:textColor="@color/pp_white"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <!-- Category 3 -->
+        <LinearLayout
+            android:id="@+id/scienceCard"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/pp_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:gravity="center"
+                android:text="🔬"
+                android:textSize="32sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Science"
+                    android:textColor="@color/pp_white"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Explore science questions"
+                    android:textColor="@color/pp_text_secondary"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="›"
+                android:textColor="@color/pp_white"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <!-- Category 4 -->
+        <LinearLayout
+            android:id="@+id/historyCard"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/pp_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:gravity="center"
+                android:text="📜"
+                android:textSize="32sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="History"
+                    android:textColor="@color/pp_white"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Test your history knowledge"
+                    android:textColor="@color/pp_text_secondary"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="›"
+                android:textColor="@color/pp_white"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <!-- Category 5 -->
+        <LinearLayout
+            android:id="@+id/sportsCard"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/pp_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:gravity="center"
+                android:text="🏏"
+                android:textSize="32sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sports"
+                    android:textColor="@color/pp_white"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Sports and games"
+                    android:textColor="@color/pp_text_secondary"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="›"
+                android:textColor="@color/pp_white"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <!-- Category 6 - UPSC -->
+        <LinearLayout
+            android:id="@+id/upscCard"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/pp_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:gravity="center"
+                android:text="🇮🇳"
+                android:textSize="32sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UPSC"
+                    android:textColor="@color/pp_white"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Civil services and general studies"
+                    android:textColor="@color/pp_text_secondary"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="›"
+                android:textColor="@color/pp_white"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <!-- Category 7 - MPSC -->
+        <LinearLayout
+            android:id="@+id/mpscCard"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/pp_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:gravity="center"
+                android:text="🏛️"
+                android:textSize="32sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MPSC"
+                    android:textColor="@color/pp_white"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Maharashtra government exams"
+                    android:textColor="@color/pp_text_secondary"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="›"
+                android:textColor="@color/pp_white"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+
+</ScrollView>
