@@ -30,7 +30,7 @@ public class QuizActivity extends AppCompatActivity {
     private TextView questionCounter;
     private TextView questionText;
     private TextView scoreText;
-
+    private SharedPreferences preferences;
     private TextView optionA;
     private TextView optionB;
     private TextView optionC;
@@ -72,6 +72,11 @@ public class QuizActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_quiz);
+
+        preferences = getSharedPreferences(
+                "PrimePuzzlesProgress",
+                MODE_PRIVATE
+        );
 
         vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 
@@ -334,6 +339,31 @@ public class QuizActivity extends AppCompatActivity {
 
         fiftyFiftyButton.setEnabled(false);
         fiftyFiftyButton.setAlpha(0.5f);
+    }
+
+    private void unlockNextLevel() {
+
+        // Calculate percentage
+        int percentage =
+                (score * 100) / questions.size();
+
+        // Unlock only if score is 60% or more
+        if (percentage >= 60) {
+
+            // Current level + 1
+            int nextLevel = selectedLevel + 1;
+
+            // There are only 6 levels
+            if (nextLevel <= 6) {
+
+                String key =
+                        selectedCategory + "_LEVEL_" + nextLevel;
+
+                preferences.edit()
+                        .putBoolean(key, true)
+                        .apply();
+            }
+        }
     }
 
     private void skipQuestion() {
@@ -1004,36 +1034,4 @@ public class QuizActivity extends AppCompatActivity {
 
     }
 
-    private void unlockNextLevel() {
-
-        // Calculate percentage
-        int percentage =
-                (score * 100) / questions.size();
-
-        // Player must score 60% or more
-        if (percentage >= 60) {
-
-            int nextLevel =
-                    selectedLevel + 1;
-
-            // Don't unlock beyond Level 6
-            if (nextLevel <= 6) {
-
-                String key =
-                        selectedCategory
-                                + "_LEVEL_"
-                                + nextLevel;
-
-                SharedPreferences preferences =
-                        getSharedPreferences(
-                                "PrimePuzzlesProgress",
-                                MODE_PRIVATE
-                        );
-
-                preferences.edit()
-                        .putBoolean(key, true)
-                        .apply();
-            }
-        }
-    }
 }

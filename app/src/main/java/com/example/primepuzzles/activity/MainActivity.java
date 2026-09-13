@@ -31,6 +31,19 @@ public class MainActivity extends AppCompatActivity {
         howToPlayCard = findViewById(R.id.howToPlayCard);
         settingsButton = findViewById(R.id.settingsButton);
 
+        LinearLayout progressCard = findViewById(R.id.progressCard);
+
+        progressCard.setOnClickListener(v -> {
+
+            Intent intent =
+                    new Intent(
+                            MainActivity.this,
+                            StatsActivity.class
+                    );
+
+            startActivity(intent);
+        });
+
         // PLAY QUIZ
         playQuizCard.setOnClickListener(v -> {
 

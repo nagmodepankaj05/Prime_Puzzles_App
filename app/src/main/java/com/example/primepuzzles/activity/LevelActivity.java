@@ -18,7 +18,11 @@ public class LevelActivity extends AppCompatActivity {
     private TextView categoryName;
 
     private String selectedCategory;
-
+    private TextView level2LockIcon;
+    private TextView level3LockIcon;
+    private TextView level4LockIcon;
+    private TextView level5LockIcon;
+    private TextView level6LockIcon;
     private SharedPreferences preferences;
 
     @Override
@@ -27,65 +31,60 @@ public class LevelActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_level);
 
+        // =========================================
         // SharedPreferences
+        // =========================================
+
         preferences = getSharedPreferences(
                 "PrimePuzzlesProgress",
                 MODE_PRIVATE
         );
 
+        // =========================================
         // Get selected category
-        selectedCategory = getIntent().getStringExtra("CATEGORY");
+        // =========================================
 
+        selectedCategory =
+                getIntent().getStringExtra("CATEGORY");
+
+        // =========================================
         // Find views
+        // =========================================
+
         backButton = findViewById(R.id.backButton);
         categoryName = findViewById(R.id.categoryName);
+        level2LockIcon = findViewById(R.id.level2LockIcon);
+        level3LockIcon = findViewById(R.id.level3LockIcon);
+        level4LockIcon = findViewById(R.id.level4LockIcon);
+        level5LockIcon = findViewById(R.id.level5LockIcon);
+        level6LockIcon = findViewById(R.id.level6LockIcon);
 
+        // =========================================
         // Display category name
+        // =========================================
+
         if (selectedCategory != null) {
             categoryName.setText(selectedCategory);
         }
 
+        // =========================================
         // Back button
+        // =========================================
+
         backButton.setOnClickListener(v -> {
             finish();
         });
 
-        // Setup levels
-        setupLevel(
-                R.id.level1Card,
-                1,
-                true
-        );
+        // =========================================
+        // Setup all levels
+        // =========================================
 
-        setupLevel(
-                R.id.level2Card,
-                2,
-                isLevelUnlocked(2)
-        );
-
-        setupLevel(
-                R.id.level3Card,
-                3,
-                isLevelUnlocked(3)
-        );
-
-        setupLevel(
-                R.id.level4Card,
-                4,
-                isLevelUnlocked(4)
-        );
-
-        setupLevel(
-                R.id.level5Card,
-                5,
-                isLevelUnlocked(5)
-        );
-
-        setupLevel(
-                R.id.level6Card,
-                6,
-                isLevelUnlocked(6)
-        );
+        setupLevelCard(R.id.level1Card, 1);
+        setupLevelCard(R.id.level2Card, 2);
+        setupLevelCard(R.id.level3Card, 3);
+        setupLevelCard(R.id.level4Card, 4);
+        setupLevelCard(R.id.level5Card, 5);
+        setupLevelCard(R.id.level6Card, 6);
     }
 
 
@@ -114,18 +113,18 @@ public class LevelActivity extends AppCompatActivity {
     // SETUP LEVEL CARD
     // =========================================
 
-    private void setupLevel(
-            int cardId,
-            int level,
-            boolean unlocked
-    ) {
+    private void setupLevelCard(int cardId, int level) {
 
         View levelCard = findViewById(cardId);
 
+        boolean unlocked = isLevelUnlocked(level);
+
         if (unlocked) {
 
-            // Unlocked appearance
+            // 🔓 LEVEL UNLOCKED
             levelCard.setAlpha(1.0f);
+
+            updateLockIcon(level, true);
 
             levelCard.setOnClickListener(v -> {
 
@@ -149,18 +148,47 @@ public class LevelActivity extends AppCompatActivity {
 
         } else {
 
-            // Locked appearance
+            // 🔒 LEVEL LOCKED
             levelCard.setAlpha(0.5f);
+
+            updateLockIcon(level, false);
 
             levelCard.setOnClickListener(v -> {
 
                 Toast.makeText(
                         LevelActivity.this,
-                        "Complete the previous level first.",
+                        "🔒 Complete the previous level first.",
                         Toast.LENGTH_SHORT
                 ).show();
-
             });
+        }
+    }
+
+    private void updateLockIcon(int level, boolean unlocked) {
+
+        String icon = unlocked ? "🔓" : "🔒";
+
+        switch (level) {
+
+            case 2:
+                level2LockIcon.setText(icon);
+                break;
+
+            case 3:
+                level3LockIcon.setText(icon);
+                break;
+
+            case 4:
+                level4LockIcon.setText(icon);
+                break;
+
+            case 5:
+                level5LockIcon.setText(icon);
+                break;
+
+            case 6:
+                level6LockIcon.setText(icon);
+                break;
         }
     }
 }

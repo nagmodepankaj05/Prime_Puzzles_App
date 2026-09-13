@@ -166,6 +166,7 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/level2LockIcon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="🔒"
@@ -222,6 +223,7 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/level3LockIcon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="🔒"
@@ -278,6 +280,7 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/level4LockIcon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="🔒"
@@ -334,6 +337,7 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/level5LockIcon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="🔒"
@@ -390,6 +394,7 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/level6LockIcon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="🔒"

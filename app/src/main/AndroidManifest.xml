@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PrimePuzzles">
         <activity
+            android:name=".activity.StatsActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.ResultActivity"
             android:exported="false" />
         <activity

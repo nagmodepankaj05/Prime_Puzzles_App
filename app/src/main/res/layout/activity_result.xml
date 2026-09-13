@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:orientation="vertical"
         android:padding="24dp">
@@ -18,7 +18,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="35dp"
             android:text="🏆"
             android:textSize="70sp" />
 
@@ -27,7 +27,7 @@
             android:id="@+id/resultTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="12dp"
             android:text="Quiz Completed!"
             android:textColor="@color/pp_white"
             android:textSize="28sp"
@@ -47,7 +47,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/pp_card"
             android:gravity="center"
             android:orientation="vertical"
@@ -82,7 +82,7 @@
 
         </LinearLayout>
 
-        <!-- Result Message -->
+        <!-- Performance Message -->
         <TextView
             android:id="@+id/resultMessage"
             android:layout_width="match_parent"
@@ -111,8 +111,8 @@
             android:id="@+id/nextLevelButton"
             android:layout_width="match_parent"
             android:layout_height="55dp"
-            android:layout_marginTop="30dp"
-            android:text="NEXT LEVEL"
+            android:layout_marginTop="25dp"
+            android:text="▶ NEXT LEVEL"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -122,7 +122,7 @@
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_marginTop="12dp"
-            android:text="RETRY LEVEL"
+            android:text="🔄 RETRY LEVEL"
             android:textSize="16sp" />
 
         <!-- Back to Levels -->
@@ -131,8 +131,13 @@
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_marginTop="12dp"
-            android:text="BACK TO LEVELS"
+            android:text="📚 BACK TO LEVELS"
             android:textSize="16sp" />
+
+        <!-- Bottom Space -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
 
     </LinearLayout>
 
