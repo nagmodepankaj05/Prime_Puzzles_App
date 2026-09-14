@@ -162,6 +162,7 @@
 
 
         <!-- UPSC -->
+        <!-- UPSC Progress -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -170,31 +171,44 @@
             android:orientation="vertical"
             android:padding="18dp">
 
+            <!-- Category Header -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center_vertical"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="UPSC"
+                    android:text="🇮🇳 UPSC"
                     android:textColor="@color/pp_white"
-                    android:textSize="17sp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/upscProgressText"
+                    android:id="@+id/upscPercentageText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="0 / 6"
-                    android:textColor="@color/pp_text_secondary"
-                    android:textSize="15sp" />
+                    android:text="0%"
+                    android:textColor="@color/pp_white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
+            <!-- Level Progress -->
+            <TextView
+                android:id="@+id/upscProgressText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="0 / 6 levels completed"
+                android:textColor="@color/pp_text_secondary"
+                android:textSize="14sp" />
 
+            <!-- Progress Bar -->
             <ProgressBar
                 android:id="@+id/upscProgressBar"
                 style="?android:attr/progressBarStyleHorizontal"
@@ -204,43 +218,67 @@
                 android:max="6"
                 android:progress="0" />
 
+            <!-- Current Level -->
+            <TextView
+                android:id="@+id/upscCurrentLevelText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="🔓 Current Level: 1"
+                android:textColor="@color/pp_white"
+                android:textSize="14sp" />
+
         </LinearLayout>
 
 
         <!-- MPSC -->
+        <!-- MPSC Progress -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/pp_card"
             android:orientation="vertical"
             android:padding="18dp">
 
+            <!-- Category Header -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center_vertical"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="MPSC"
+                    android:text="🏛️ MPSC"
                     android:textColor="@color/pp_white"
-                    android:textSize="17sp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/mpscProgressText"
+                    android:id="@+id/mpscPercentageText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="0 / 6"
-                    android:textColor="@color/pp_text_secondary"
-                    android:textSize="15sp" />
+                    android:text="0%"
+                    android:textColor="@color/pp_white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
+            <!-- Level Progress -->
+            <TextView
+                android:id="@+id/mpscProgressText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="0 / 6 levels completed"
+                android:textColor="@color/pp_text_secondary"
+                android:textSize="14sp" />
 
+            <!-- Progress Bar -->
             <ProgressBar
                 android:id="@+id/mpscProgressBar"
                 style="?android:attr/progressBarStyleHorizontal"
@@ -249,6 +287,16 @@
                 android:layout_marginTop="12dp"
                 android:max="6"
                 android:progress="0" />
+
+            <!-- Current Level -->
+            <TextView
+                android:id="@+id/mpscCurrentLevelText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="🔓 Current Level: 1"
+                android:textColor="@color/pp_white"
+                android:textSize="14sp" />
 
         </LinearLayout>
 

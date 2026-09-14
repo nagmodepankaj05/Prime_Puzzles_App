@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pp_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15sp"
+        android:padding="24dp">
+
+        <!-- Top Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Back"
+                android:src="@android:drawable/ic_menu_revert"
+                android:tint="@color/pp_white" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="ℹ️ About"
+                android:textColor="@color/pp_white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="48dp"
+                android:layout_height="48dp" />
+
+        </LinearLayout>
+
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/aboutLogo"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:contentDescription="Prime Puzzles Logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/prime_puzzles_logo" />
+
+
+        <!-- App Name -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="PRIME PUZZLES"
+            android:textColor="@color/pp_white"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+
+        <!-- Version -->
+        <TextView
+            android:id="@+id/versionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Version 1.0"
+            android:textColor="@color/pp_text_secondary"
+            android:textSize="14sp" />
+
+
+        <!-- Description Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/pp_card"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🧠 About Prime Puzzles"
+                android:textColor="@color/pp_white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="4dp"
+                android:text="Prime Puzzles is an interactive quiz and puzzle app designed to challenge your knowledge, improve your thinking skills, and make learning more engaging."
+                android:textColor="@color/pp_text_secondary"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+        <!-- Features Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/pp_card"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✨ Features"
+                android:textColor="@color/pp_white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:lineSpacingExtra="5dp"
+                android:text="• Multiple quiz categories&#10;• Level-based progression&#10;• Countdown timer&#10;• Score and points system&#10;• 50:50 lifeline&#10;• Skip Question lifeline&#10;• Audience Poll lifeline&#10;• Progress and statistics&#10;• Sound and vibration controls&#10;• Dark and Light theme"
+                android:textColor="@color/pp_text_secondary"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+        <!-- Technology Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/pp_card"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🛠 Technologies"
+                android:textColor="@color/pp_white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:lineSpacingExtra="5dp"
+                android:text="• Java&#10;• Android Studio&#10;• XML&#10;• Android SDK&#10;• SharedPreferences"
+                android:textColor="@color/pp_text_secondary"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+        <!-- Developer Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/pp_card"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="👨‍💻 Developer"
+                android:textColor="@color/pp_white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/developerText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Developed with ❤️ by Pankaj Nagmode"
+                android:textColor="@color/pp_text_secondary"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+        <!-- Bottom -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="Learn • Play • Improve 🚀"
+            android:textColor="@color/pp_text_secondary"
+            android:textSize="14sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -20,7 +20,11 @@ public class StatsActivity extends AppCompatActivity {
 
     private TextView upscProgressText;
     private TextView mpscProgressText;
+    private TextView upscPercentageText;
+    private TextView mpscPercentageText;
 
+    private TextView upscCurrentLevelText;
+    private TextView mpscCurrentLevelText;
     private ProgressBar upscProgressBar;
     private ProgressBar mpscProgressBar;
 
@@ -67,6 +71,17 @@ public class StatsActivity extends AppCompatActivity {
         mpscProgressBar =
                 findViewById(R.id.mpscProgressBar);
 
+        upscPercentageText =
+                findViewById(R.id.upscPercentageText);
+
+        mpscPercentageText =
+                findViewById(R.id.mpscPercentageText);
+
+        upscCurrentLevelText =
+                findViewById(R.id.upscCurrentLevelText);
+
+        mpscCurrentLevelText =
+                findViewById(R.id.mpscCurrentLevelText);
 
         // Back button
         backButton.setOnClickListener(v -> {
@@ -127,22 +142,24 @@ public class StatsActivity extends AppCompatActivity {
 
 
         completedLevelsText.setText(
-                totalCompletedLevels + " / 6"
+                totalCompletedLevels + " / 12"
         );
-
 
         // Category progress
         updateCategoryProgress(
                 "UPSC",
                 upscProgressText,
-                upscProgressBar
+                upscProgressBar,
+                upscPercentageText,
+                upscCurrentLevelText
         );
-
 
         updateCategoryProgress(
                 "MPSC",
                 mpscProgressText,
-                mpscProgressBar
+                mpscProgressBar,
+                mpscPercentageText,
+                mpscCurrentLevelText
         );
     }
 
@@ -197,11 +214,11 @@ public class StatsActivity extends AppCompatActivity {
     private void updateCategoryProgress(
             String category,
             TextView progressText,
-            ProgressBar progressBar) {
-
+            ProgressBar progressBar,
+            TextView percentageText,
+            TextView currentLevelText) {
 
         int completed = 0;
-
 
         for (int level = 1; level <= 6; level++) {
 
@@ -211,24 +228,61 @@ public class StatsActivity extends AppCompatActivity {
                             + level
                             + "_COMPLETED";
 
-
             if (preferences.getBoolean(
                     key,
                     false
             )) {
-
                 completed++;
             }
         }
 
+        int percentage =
+                (completed * 100) / 6;
 
         progressText.setText(
-                completed + " / 6"
+                completed + " / 6 levels completed"
         );
 
+        percentageText.setText(
+                percentage + "%"
+        );
 
         progressBar.setProgress(
                 completed
         );
+
+        int currentLevel = 1;
+
+        for (int level = 1; level <= 6; level++) {
+
+            String completedKey =
+                    category
+                            + "_LEVEL_"
+                            + level
+                            + "_COMPLETED";
+
+            if (preferences.getBoolean(
+                    completedKey,
+                    false
+            )) {
+                currentLevel = level + 1;
+            } else {
+                break;
+            }
+        }
+
+        if (currentLevel > 6) {
+
+            currentLevelText.setText(
+                    "🏆 All 6 levels completed!"
+            );
+
+        } else {
+
+            currentLevelText.setText(
+                    "🔓 Current Level: "
+                            + currentLevel
+            );
+        }
     }
 }

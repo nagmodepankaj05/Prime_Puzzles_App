@@ -56,22 +56,22 @@ public class QuizActivity extends AppCompatActivity {
     private int score = 0;
     private int points = 0;
 
-    // 0 = no answer selected
-    // 1 = A
-    // 2 = B
-    // 3 = C
-    // 4 = D
     private int selectedAnswer = 0;
 
     private String selectedCategory;
     private int selectedLevel;
 
+    private SharedPreferences settingsPreferences;
+
+    private boolean soundEnabled;
+    private boolean vibrationEnabled;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_quiz);
+
 
         preferences = getSharedPreferences(
                 "PrimePuzzlesProgress",
@@ -238,8 +238,26 @@ public class QuizActivity extends AppCompatActivity {
             showAudiencePoll();
 
         });
+        loadSettings();
     }
 
+    private void loadSettings() {
+
+        settingsPreferences = getSharedPreferences(
+                "PrimePuzzlesProgress",
+                MODE_PRIVATE
+        );
+
+        soundEnabled = settingsPreferences.getBoolean(
+                "SOUND_ENABLED",
+                true
+        );
+
+        vibrationEnabled = settingsPreferences.getBoolean(
+                "VIBRATION_ENABLED",
+                true
+        );
+    }
 
     // =============================================
     // START TIMER
@@ -930,6 +948,10 @@ public class QuizActivity extends AppCompatActivity {
 
     private void vibrate(long duration) {
 
+        if (!vibrationEnabled) {
+            return;
+        }
+
         if (vibrator == null) {
             return;
         }
@@ -946,7 +968,6 @@ public class QuizActivity extends AppCompatActivity {
         } else {
 
             vibrator.vibrate(duration);
-
         }
     }
 
@@ -956,6 +977,10 @@ public class QuizActivity extends AppCompatActivity {
 // =============================================
 
     private void playCorrectSound() {
+
+        if (!soundEnabled) {
+            return;
+        }
 
         MediaPlayer mediaPlayer =
                 MediaPlayer.create(
@@ -980,6 +1005,10 @@ public class QuizActivity extends AppCompatActivity {
 
     private void playWrongSound() {
 
+        if (!soundEnabled) {
+            return;
+        }
+
         MediaPlayer mediaPlayer =
                 MediaPlayer.create(
                         this,
@@ -1002,6 +1031,10 @@ public class QuizActivity extends AppCompatActivity {
 // =============================================
 
     private void playTimeoutSound() {
+
+        if (!soundEnabled) {
+            return;
+        }
 
         MediaPlayer mediaPlayer =
                 MediaPlayer.create(

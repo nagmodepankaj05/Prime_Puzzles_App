@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <resources>
 
-    <!-- Prime Puzzles Colors -->
+    <!-- Dark Theme -->
 
-    <color name="pp_background">#F8FAFC</color>
-    <color name="pp_surface">#FFFFFF</color>
+    <color name="pp_background">#0F172A</color>
+
+    <color name="pp_surface">#1E293B</color>
+
+    <color name="pp_white">#FFFFFF</color>
+
+    <color name="pp_text_secondary">#94A3B8</color>
 
     <color name="pp_primary">#FFC107</color>
     <color name="pp_secondary">#7C4DFF</color>
-
-    <color name="pp_white">#0F172A</color>
-    <color name="pp_text_secondary">#64748B</color>
 
     <color name="pp_correct">#22C55E</color>
     <color name="pp_wrong">#EF4444</color>

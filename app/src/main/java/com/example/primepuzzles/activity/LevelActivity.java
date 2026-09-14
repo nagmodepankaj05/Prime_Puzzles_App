@@ -87,6 +87,20 @@ public class LevelActivity extends AppCompatActivity {
         setupLevelCard(R.id.level6Card, 6);
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        if (preferences != null) {
+
+            setupLevelCard(R.id.level1Card, 1);
+            setupLevelCard(R.id.level2Card, 2);
+            setupLevelCard(R.id.level3Card, 3);
+            setupLevelCard(R.id.level4Card, 4);
+            setupLevelCard(R.id.level5Card, 5);
+            setupLevelCard(R.id.level6Card, 6);
+        }
+    }
 
     // =========================================
     // CHECK LEVEL UNLOCK
@@ -119,39 +133,62 @@ public class LevelActivity extends AppCompatActivity {
 
         boolean unlocked = isLevelUnlocked(level);
 
+        String completedKey =
+                selectedCategory
+                        + "_LEVEL_"
+                        + level
+                        + "_COMPLETED";
+
+        boolean completed =
+                preferences.getBoolean(
+                        completedKey,
+                        false
+                );
+
         if (unlocked) {
 
-            // 🔓 LEVEL UNLOCKED
+            // Unlocked card
             levelCard.setAlpha(1.0f);
-
-            updateLockIcon(level, true);
 
             levelCard.setOnClickListener(v -> {
 
-                Intent intent = new Intent(
-                        LevelActivity.this,
-                        QuizActivity.class
-                );
+                // Press animation
+                v.animate()
+                        .scaleX(0.96f)
+                        .scaleY(0.96f)
+                        .setDuration(80)
+                        .withEndAction(() -> {
 
-                intent.putExtra(
-                        "CATEGORY",
-                        selectedCategory
-                );
+                            v.animate()
+                                    .scaleX(1.0f)
+                                    .scaleY(1.0f)
+                                    .setDuration(80)
+                                    .start();
 
-                intent.putExtra(
-                        "LEVEL",
-                        level
-                );
+                            Intent intent = new Intent(
+                                    LevelActivity.this,
+                                    QuizActivity.class
+                            );
 
-                startActivity(intent);
+                            intent.putExtra(
+                                    "CATEGORY",
+                                    selectedCategory
+                            );
+
+                            intent.putExtra(
+                                    "LEVEL",
+                                    level
+                            );
+
+                            startActivity(intent);
+                        })
+                        .start();
             });
 
         } else {
 
-            // 🔒 LEVEL LOCKED
-            levelCard.setAlpha(0.5f);
-
-            updateLockIcon(level, false);
+            // Locked card
+            levelCard.setAlpha(0.45f);
 
             levelCard.setOnClickListener(v -> {
 
@@ -160,9 +197,32 @@ public class LevelActivity extends AppCompatActivity {
                         "🔒 Complete the previous level first.",
                         Toast.LENGTH_SHORT
                 ).show();
+
+                // Shake animation
+                v.animate()
+                        .translationX(8)
+                        .setDuration(50)
+                        .withEndAction(() -> {
+
+                            v.animate()
+                                    .translationX(-8)
+                                    .setDuration(50)
+                                    .withEndAction(() -> {
+
+                                        v.animate()
+                                                .translationX(0)
+                                                .setDuration(50)
+                                                .start();
+
+                                    })
+                                    .start();
+
+                        })
+                        .start();
             });
         }
     }
+
 
     private void updateLockIcon(int level, boolean unlocked) {
 

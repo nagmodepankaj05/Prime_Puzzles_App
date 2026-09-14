@@ -7,6 +7,8 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import android.content.SharedPreferences;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import com.example.primepuzzles.R;
 
@@ -21,6 +23,32 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        SharedPreferences preferences =
+                getSharedPreferences(
+                        "PrimePuzzlesProgress",
+                        MODE_PRIVATE
+                );
+
+        boolean darkMode =
+                preferences.getBoolean(
+                        "DARK_MODE",
+                        true
+                );
+
+        if (darkMode) {
+
+            AppCompatDelegate
+                    .setDefaultNightMode(
+                            AppCompatDelegate.MODE_NIGHT_YES
+                    );
+
+        } else {
+
+            AppCompatDelegate
+                    .setDefaultNightMode(
+                            AppCompatDelegate.MODE_NIGHT_NO
+                    );
+        }
 
         setContentView(R.layout.activity_main);
 
@@ -30,8 +58,20 @@ public class MainActivity extends AppCompatActivity {
         levelsCard = findViewById(R.id.levelsCard);
         howToPlayCard = findViewById(R.id.howToPlayCard);
         settingsButton = findViewById(R.id.settingsButton);
-
         LinearLayout progressCard = findViewById(R.id.progressCard);
+
+        LinearLayout aboutCard =
+                findViewById(R.id.aboutCard);
+
+        aboutCard.setOnClickListener(v -> {
+
+            Intent intent = new Intent(
+                    MainActivity.this,
+                    AboutActivity.class
+            );
+
+            startActivity(intent);
+        });
 
         progressCard.setOnClickListener(v -> {
 
@@ -88,11 +128,13 @@ public class MainActivity extends AppCompatActivity {
 
         // Settings
         settingsButton.setOnClickListener(v -> {
-            Toast.makeText(
+
+            Intent intent = new Intent(
                     MainActivity.this,
-                    "Settings coming soon!",
-                    Toast.LENGTH_SHORT
-            ).show();
+                    SettingsActivity.class
+            );
+
+            startActivity(intent);
         });
     }
 }
