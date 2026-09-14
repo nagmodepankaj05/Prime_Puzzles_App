@@ -145,9 +145,21 @@ public class LevelActivity extends AppCompatActivity {
                         false
                 );
 
+        // =========================================
+        // UPDATE LOCK / UNLOCK ICON
+        // =========================================
+
+        if (level > 1) {
+            updateLockIcon(level, unlocked);
+        }
+
+        // =========================================
+        // UNLOCKED LEVEL
+        // =========================================
+
         if (unlocked) {
 
-            // Unlocked card
+            // Normal appearance
             levelCard.setAlpha(1.0f);
 
             levelCard.setOnClickListener(v -> {
@@ -185,9 +197,15 @@ public class LevelActivity extends AppCompatActivity {
                         .start();
             });
 
-        } else {
+        }
 
-            // Locked card
+        // =========================================
+        // LOCKED LEVEL
+        // =========================================
+
+        else {
+
+            // Make locked level look disabled
             levelCard.setAlpha(0.45f);
 
             levelCard.setOnClickListener(v -> {
@@ -223,7 +241,6 @@ public class LevelActivity extends AppCompatActivity {
         }
     }
 
-
     private void updateLockIcon(int level, boolean unlocked) {
 
         String icon = unlocked ? "🔓" : "🔒";
@@ -231,23 +248,33 @@ public class LevelActivity extends AppCompatActivity {
         switch (level) {
 
             case 2:
-                level2LockIcon.setText(icon);
+                if (level2LockIcon != null) {
+                    level2LockIcon.setText(icon);
+                }
                 break;
 
             case 3:
-                level3LockIcon.setText(icon);
+                if (level3LockIcon != null) {
+                    level3LockIcon.setText(icon);
+                }
                 break;
 
             case 4:
-                level4LockIcon.setText(icon);
+                if (level4LockIcon != null) {
+                    level4LockIcon.setText(icon);
+                }
                 break;
 
             case 5:
-                level5LockIcon.setText(icon);
+                if (level5LockIcon != null) {
+                    level5LockIcon.setText(icon);
+                }
                 break;
 
             case 6:
-                level6LockIcon.setText(icon);
+                if (level6LockIcon != null) {
+                    level6LockIcon.setText(icon);
+                }
                 break;
         }
     }

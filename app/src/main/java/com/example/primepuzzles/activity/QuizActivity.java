@@ -60,7 +60,7 @@ public class QuizActivity extends AppCompatActivity {
 
     private String selectedCategory;
     private int selectedLevel;
-
+    private boolean isDailyChallenge;
     private SharedPreferences settingsPreferences;
 
     private boolean soundEnabled;
@@ -90,6 +90,11 @@ public class QuizActivity extends AppCompatActivity {
         selectedLevel =
                 getIntent().getIntExtra("LEVEL", 1);
 
+        isDailyChallenge =
+                getIntent().getBooleanExtra(
+                        "DAILY_CHALLENGE",
+                        false
+                );
 
         // =========================================
         // FIND VIEWS
@@ -213,13 +218,7 @@ public class QuizActivity extends AppCompatActivity {
         // =========================================
 
         backButton.setOnClickListener(v -> {
-
-            if (countDownTimer != null) {
-                countDownTimer.cancel();
-            }
-
-            finish();
-
+            showExitQuizDialog();
         });
 
         fiftyFiftyButton.setOnClickListener(v -> {
@@ -239,6 +238,13 @@ public class QuizActivity extends AppCompatActivity {
 
         });
         loadSettings();
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        showExitQuizDialog();
+
     }
 
     private void loadSettings() {
@@ -417,7 +423,9 @@ public class QuizActivity extends AppCompatActivity {
 
         // No more questions
         else {
-            unlockNextLevel();
+            if (!isDailyChallenge) {
+                unlockNextLevel();
+            }
 
             Intent intent = new Intent(
                     QuizActivity.this,
@@ -447,6 +455,11 @@ public class QuizActivity extends AppCompatActivity {
             intent.putExtra(
                     "POINTS",
                     points
+            );
+
+            intent.putExtra(
+                    "DAILY_CHALLENGE",
+                    isDailyChallenge
             );
 
             startActivity(intent);
@@ -1067,4 +1080,29 @@ public class QuizActivity extends AppCompatActivity {
 
     }
 
+    private void showExitQuizDialog() {
+
+        new androidx.appcompat.app.AlertDialog.Builder(this)
+                .setTitle("Leave Quiz?")
+                .setMessage(
+                        "Your current quiz progress will be lost."
+                )
+                .setNegativeButton(
+                        "CANCEL",
+                        (dialog, which) -> dialog.dismiss()
+                )
+                .setPositiveButton(
+                        "LEAVE",
+                        (dialog, which) -> {
+
+                            if (countDownTimer != null) {
+                                countDownTimer.cancel();
+                            }
+
+                            finish();
+
+                        }
+                )
+                .show();
+    }
 }

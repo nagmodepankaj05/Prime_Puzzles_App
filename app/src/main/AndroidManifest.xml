@@ -17,6 +17,14 @@
         android:theme="@style/Theme.PrimePuzzles">
 
         <activity
+            android:name=".activity.DailyChallengeActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.HowToPlayActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".activity.AboutActivity"
             android:exported="false" />
 

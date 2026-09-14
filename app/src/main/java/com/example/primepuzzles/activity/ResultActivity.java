@@ -11,6 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.primepuzzles.R;
 
+import java.util.Calendar;
+
 public class ResultActivity extends AppCompatActivity {
 
     private TextView resultTitle;
@@ -29,68 +31,118 @@ public class ResultActivity extends AppCompatActivity {
     private int score;
     private int totalQuestions;
 
+    private boolean isDailyChallenge;
+
     private SharedPreferences preferences;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_result);
 
+        // ==========================================
+        // Get Daily Challenge Status
+        // ==========================================
 
-        // Get result data
+        isDailyChallenge =
+                getIntent().getBooleanExtra(
+                        "DAILY_CHALLENGE",
+                        false
+                );
+
+        // ==========================================
+        // Get Result Data
+        // ==========================================
+
         category =
-                getIntent().getStringExtra("CATEGORY");
+                getIntent().getStringExtra(
+                        "CATEGORY"
+                );
 
         level =
-                getIntent().getIntExtra("LEVEL", 1);
+                getIntent().getIntExtra(
+                        "LEVEL",
+                        1
+                );
 
         score =
-                getIntent().getIntExtra("SCORE", 0);
+                getIntent().getIntExtra(
+                        "SCORE",
+                        0
+                );
 
         totalQuestions =
-                getIntent().getIntExtra("TOTAL", 10);
+                getIntent().getIntExtra(
+                        "TOTAL",
+                        10
+                );
 
+        // ==========================================
+        // Find Views
+        // ==========================================
 
-        // Find views
         resultTitle =
-                findViewById(R.id.resultTitle);
+                findViewById(
+                        R.id.resultTitle
+                );
 
         resultCategory =
-                findViewById(R.id.resultCategory);
+                findViewById(
+                        R.id.resultCategory
+                );
 
         scoreText =
-                findViewById(R.id.scoreText);
+                findViewById(
+                        R.id.scoreText
+                );
 
         percentageText =
-                findViewById(R.id.percentageText);
+                findViewById(
+                        R.id.percentageText
+                );
 
         resultMessage =
-                findViewById(R.id.resultMessage);
+                findViewById(
+                        R.id.resultMessage
+                );
 
         unlockMessage =
-                findViewById(R.id.unlockMessage);
+                findViewById(
+                        R.id.unlockMessage
+                );
 
         nextLevelButton =
-                findViewById(R.id.nextLevelButton);
+                findViewById(
+                        R.id.nextLevelButton
+                );
 
         retryButton =
-                findViewById(R.id.retryButton);
+                findViewById(
+                        R.id.retryButton
+                );
 
         backToLevelsButton =
-                findViewById(R.id.backToLevelsButton);
+                findViewById(
+                        R.id.backToLevelsButton
+                );
 
-
+        // ==========================================
         // SharedPreferences
+        // ==========================================
+
         preferences =
                 getSharedPreferences(
                         "PrimePuzzlesProgress",
                         MODE_PRIVATE
                 );
 
+        // ==========================================
+        // Calculate Percentage
+        // ==========================================
 
-        // Calculate percentage
         int percentage = 0;
 
         if (totalQuestions > 0) {
@@ -99,32 +151,75 @@ public class ResultActivity extends AppCompatActivity {
                     (score * 100) / totalQuestions;
         }
 
+        // ==========================================
+        // Mark Daily Challenge Completed
+        // ==========================================
 
-        // Display score
+        if (isDailyChallenge) {
+
+            String todayDate =
+                    getTodayDate();
+
+            String dailyCompletedKey =
+                    "DAILY_COMPLETED_" + todayDate;
+
+            preferences
+                    .edit()
+                    .putBoolean(
+                            dailyCompletedKey,
+                            true
+                    )
+                    .apply();
+        }
+
+        // ==========================================
+        // Display Score
+        // ==========================================
+
         scoreText.setText(
                 score + " / " + totalQuestions
         );
 
+        // ==========================================
+        // Display Percentage
+        // ==========================================
 
-        // Display percentage
         percentageText.setText(
                 percentage + "%"
         );
 
+        // ==========================================
+        // Display Category & Level
+        // ==========================================
 
-        // Display category and level
-        resultCategory.setText(
-                category + " • Level " + level
-        );
+        if (isDailyChallenge) {
 
+            resultCategory.setText(
+                    "Daily Challenge • "
+                            + category
+            );
 
-        // Check pass/fail
-        // Save quiz statistics
+        } else {
+
+            resultCategory.setText(
+                    category
+                            + " • Level "
+                            + level
+            );
+        }
+
+        // ==========================================
+        // Save Statistics
+        // ==========================================
+
         saveQuizStatistics();
 
-        // Check pass/fail
-        boolean passed = percentage >= 60;
+        // ==========================================
+        // Check Pass / Fail
+        // ==========================================
 
+        boolean passed =
+                percentage >= 60;
 
         if (passed) {
 
@@ -135,9 +230,20 @@ public class ResultActivity extends AppCompatActivity {
             showFailedResult();
         }
 
+        // ==========================================
+        // Retry Button
+        // ==========================================
 
-        // Retry current level
         retryButton.setOnClickListener(v -> {
+
+            // --------------------------------------
+            // Do NOT allow Daily Challenge retry
+            // --------------------------------------
+
+            if (isDailyChallenge) {
+
+                return;
+            }
 
             Intent intent =
                     new Intent(
@@ -155,44 +261,134 @@ public class ResultActivity extends AppCompatActivity {
                     level
             );
 
-            startActivity(intent);
-
-            finish();
-        });
-
-
-        // Back to levels
-        backToLevelsButton.setOnClickListener(v -> {
-
-            Intent intent =
-                    new Intent(
-                            ResultActivity.this,
-                            LevelActivity.class
-                    );
-
             intent.putExtra(
-                    "CATEGORY",
-                    category
+                    "DAILY_CHALLENGE",
+                    false
             );
 
             startActivity(intent);
 
             finish();
         });
+
+        // ==========================================
+        // Back Button
+        // ==========================================
+
+        backToLevelsButton.setOnClickListener(v -> {
+
+            if (isDailyChallenge) {
+
+                // ------------------------------
+                // Daily Challenge → Home
+                // ------------------------------
+
+                Intent intent =
+                        new Intent(
+                                ResultActivity.this,
+                                MainActivity.class
+                        );
+
+                intent.setFlags(
+                        Intent.FLAG_ACTIVITY_CLEAR_TOP |
+                                Intent.FLAG_ACTIVITY_SINGLE_TOP
+                );
+
+                startActivity(intent);
+
+                finish();
+
+            } else {
+
+                // ------------------------------
+                // Normal Level → Levels
+                // ------------------------------
+
+                Intent intent =
+                        new Intent(
+                                ResultActivity.this,
+                                LevelActivity.class
+                        );
+
+                intent.putExtra(
+                        "CATEGORY",
+                        category
+                );
+
+                startActivity(intent);
+
+                finish();
+            }
+        });
     }
 
 
-    // ================================
+    // ==============================================
     // PASSED RESULT
-    // ================================
+    // ==============================================
 
     private void showPassedResult() {
 
-        resultTitle.setText("🎉 Excellent!");
+        resultTitle.setText(
+                "🎉 Excellent!"
+        );
+
+        resultMessage.setText(
+                getPerformanceMessage()
+        );
+
+        // ==========================================
+        // DAILY CHALLENGE
+        // ==========================================
+
+        if (isDailyChallenge) {
+
+            unlockMessage.setVisibility(
+                    View.VISIBLE
+            );
+
+            unlockMessage.setText(
+                    "🏆 Daily Challenge Completed!"
+            );
+
+            // --------------------------------------
+            // No Next Level
+            // --------------------------------------
+
+            nextLevelButton.setVisibility(
+                    View.GONE
+            );
+
+            // --------------------------------------
+            // Disable Retry
+            // --------------------------------------
+
+            retryButton.setVisibility(
+                    View.GONE
+            );
+
+            // --------------------------------------
+            // Change Back Button Text
+            // --------------------------------------
+
+            backToLevelsButton.setText(
+                    "BACK TO HOME"
+            );
+
+            return;
+        }
+
+        // ==========================================
+        // NORMAL LEVEL
+        // ==========================================
 
         // Save completed level
+
         String completedKey =
-                category + "_LEVEL_" + level + "_COMPLETED";
+                category
+                        + "_LEVEL_"
+                        + level
+                        + "_COMPLETED";
 
         preferences
                 .edit()
@@ -202,22 +398,23 @@ public class ResultActivity extends AppCompatActivity {
                 )
                 .apply();
 
-        resultMessage.setText(
-                getPerformanceMessage()
-        );
+        // ==========================================
+        // Check Final Level
+        // ==========================================
 
-
-        // Check if this is the final level
         if (level < 6) {
 
             int nextLevel =
                     level + 1;
 
+            // --------------------------------------
+            // Unlock Next Level
+            // --------------------------------------
 
-            // Unlock next level
             String unlockKey =
-                    category + "_LEVEL_" + nextLevel;
-
+                    category
+                            + "_LEVEL_"
+                            + nextLevel;
 
             preferences
                     .edit()
@@ -227,8 +424,10 @@ public class ResultActivity extends AppCompatActivity {
                     )
                     .apply();
 
+            // --------------------------------------
+            // Display Unlock Message
+            // --------------------------------------
 
-            // Display unlock message
             unlockMessage.setVisibility(
                     View.VISIBLE
             );
@@ -239,14 +438,14 @@ public class ResultActivity extends AppCompatActivity {
                             + " Unlocked!"
             );
 
+            // --------------------------------------
+            // Show Next Level Button
+            // --------------------------------------
 
-            // Show next level button
             nextLevelButton.setVisibility(
                     View.VISIBLE
             );
 
-
-            // Next level button
             nextLevelButton.setOnClickListener(v -> {
 
                 Intent intent =
@@ -265,25 +464,31 @@ public class ResultActivity extends AppCompatActivity {
                         nextLevel
                 );
 
+                intent.putExtra(
+                        "DAILY_CHALLENGE",
+                        false
+                );
+
                 startActivity(intent);
 
                 finish();
             });
 
-
         } else {
 
-            // Final Level completed
+            // ======================================
+            // Final Level Completed
+            // ======================================
+
             unlockMessage.setVisibility(
                     View.VISIBLE
             );
 
             unlockMessage.setText(
-                    "🏆 Congratulations! You completed all levels!"
+                    "🏆 Congratulations! "
+                            + "You completed all levels!"
             );
 
-
-            // No next level
             nextLevelButton.setVisibility(
                     View.GONE
             );
@@ -291,9 +496,9 @@ public class ResultActivity extends AppCompatActivity {
     }
 
 
-    // ================================
+    // ==============================================
     // FAILED RESULT
-    // ================================
+    // ==============================================
 
     private void showFailedResult() {
 
@@ -301,16 +506,64 @@ public class ResultActivity extends AppCompatActivity {
                 "Keep Trying! 💪"
         );
 
+        // ==========================================
+        // DAILY CHALLENGE
+        // ==========================================
+
+        if (isDailyChallenge) {
+
+            resultMessage.setText(
+                    "You completed today's "
+                            + "Daily Challenge!"
+            );
+
+            unlockMessage.setVisibility(
+                    View.VISIBLE
+            );
+
+            unlockMessage.setText(
+                    "🏆 Daily Challenge Completed!"
+            );
+
+            // --------------------------------------
+            // No Retry
+            // --------------------------------------
+
+            retryButton.setVisibility(
+                    View.GONE
+            );
+
+            // --------------------------------------
+            // No Next Level
+            // --------------------------------------
+
+            nextLevelButton.setVisibility(
+                    View.GONE
+            );
+
+            // --------------------------------------
+            // Back To Home
+            // --------------------------------------
+
+            backToLevelsButton.setText(
+                    "BACK TO HOME"
+            );
+
+            return;
+        }
+
+        // ==========================================
+        // NORMAL LEVEL FAILED
+        // ==========================================
 
         resultMessage.setText(
-                "You need at least 60% to unlock the next level."
+                "You need at least 60% "
+                        + "to unlock the next level."
         );
-
 
         unlockMessage.setVisibility(
                 View.VISIBLE
         );
-
 
         unlockMessage.setText(
                 "🔒 Level "
@@ -318,56 +571,93 @@ public class ResultActivity extends AppCompatActivity {
                         + " is locked"
         );
 
-
         // Hide next level button
+
         nextLevelButton.setVisibility(
                 View.GONE
         );
     }
 
 
-    // ================================
+    // ==============================================
     // PERFORMANCE MESSAGE
-    // ================================
+    // ==============================================
 
     private String getPerformanceMessage() {
+
+        if (totalQuestions <= 0) {
+
+            return "Quiz completed!";
+        }
 
         int percentage =
                 (score * 100) / totalQuestions;
 
-
         if (percentage == 100) {
 
-            return "🔥 Perfect Score! Amazing work!";
+            return "🔥 Perfect Score! "
+                    + "Amazing work!";
 
         } else if (percentage >= 80) {
 
-            return "🌟 Excellent performance! Keep going!";
+            return "🌟 Excellent performance! "
+                    + "Keep going!";
 
         } else if (percentage >= 60) {
 
-            return "👍 Great job! You passed the level!";
+            return "👍 Great job! "
+                    + "You passed the level!";
 
         } else {
 
-            return "Keep practicing and try again!";
+            return "Keep practicing "
+                    + "and try again!";
         }
     }
 
-    // =================================
-// SAVE QUIZ STATISTICS
-// =================================
+
+    // ==============================================
+    // GET TODAY'S DATE
+    // ==============================================
+
+    private String getTodayDate() {
+
+        Calendar calendar =
+                Calendar.getInstance();
+
+        int year =
+                calendar.get(Calendar.YEAR);
+
+        int month =
+                calendar.get(Calendar.MONTH) + 1;
+
+        int day =
+                calendar.get(Calendar.DAY_OF_MONTH);
+
+        return year
+                + "-"
+                + month
+                + "-"
+                + day;
+    }
+
+
+    // ==============================================
+    // SAVE QUIZ STATISTICS
+    // ==============================================
 
     private void saveQuizStatistics() {
 
-        // Get current total quizzes
+        // ==========================================
+        // Total Quizzes
+        // ==========================================
+
         int totalQuizzes =
                 preferences.getInt(
                         "TOTAL_QUIZZES",
                         0
                 );
 
-        // Increase quiz count
         totalQuizzes++;
 
         preferences
@@ -378,26 +668,33 @@ public class ResultActivity extends AppCompatActivity {
                 )
                 .apply();
 
+        // ==========================================
+        // Calculate Percentage
+        // ==========================================
 
-        // Calculate percentage
         int percentage = 0;
 
         if (totalQuestions > 0) {
 
             percentage =
-                    (score * 100) / totalQuestions;
+                    (score * 100)
+                            / totalQuestions;
         }
 
+        // ==========================================
+        // Previous Best Score
+        // ==========================================
 
-        // Get previous best score
         int bestScore =
                 preferences.getInt(
                         "BEST_SCORE",
                         0
                 );
 
+        // ==========================================
+        // Save New Best Score
+        // ==========================================
 
-        // Save new best score
         if (percentage > bestScore) {
 
             preferences

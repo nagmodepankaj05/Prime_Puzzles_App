@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
 
     private LinearLayout playQuizCard;
     private LinearLayout categoriesCard;
-    private LinearLayout levelsCard;
     private LinearLayout howToPlayCard;
     private ImageButton settingsButton;
 
@@ -55,10 +54,11 @@ public class MainActivity extends AppCompatActivity {
         // Find views
         playQuizCard = findViewById(R.id.playQuizCard);
         categoriesCard = findViewById(R.id.categoriesCard);
-        levelsCard = findViewById(R.id.levelsCard);
         howToPlayCard = findViewById(R.id.howToPlayCard);
         settingsButton = findViewById(R.id.settingsButton);
         LinearLayout progressCard = findViewById(R.id.progressCard);
+        LinearLayout dailyChallengeCard =
+                findViewById(R.id.dailyChallengeCard);
 
         LinearLayout aboutCard =
                 findViewById(R.id.aboutCard);
@@ -108,22 +108,26 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        // Levels
-        levelsCard.setOnClickListener(v -> {
-            Toast.makeText(
+        // Daily Challenge
+        dailyChallengeCard.setOnClickListener(v -> {
+
+            Intent intent = new Intent(
                     MainActivity.this,
-                    "Levels coming soon!",
-                    Toast.LENGTH_SHORT
-            ).show();
+                    DailyChallengeActivity.class
+            );
+
+            startActivity(intent);
         });
 
         // How to Play
         howToPlayCard.setOnClickListener(v -> {
-            Toast.makeText(
+
+            Intent intent = new Intent(
                     MainActivity.this,
-                    "How to Play coming soon!",
-                    Toast.LENGTH_SHORT
-            ).show();
+                    HowToPlayActivity.class
+            );
+
+            startActivity(intent);
         });
 
         // Settings
@@ -136,5 +140,28 @@ public class MainActivity extends AppCompatActivity {
 
             startActivity(intent);
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        new androidx.appcompat.app.AlertDialog.Builder(this)
+                .setTitle("Exit Prime Puzzles?")
+
+                .setMessage(
+                        "Are you sure you want to exit Prime Puzzles?"
+                )
+
+                .setNegativeButton(
+                        "CANCEL",
+                        (dialog, which) -> dialog.dismiss()
+                )
+
+                .setPositiveButton(
+                        "EXIT",
+                        (dialog, which) -> finishAffinity()
+                )
+
+                .show();
     }
 }
