@@ -29,19 +29,19 @@ public class QuestionBank {
             if (level == 1) {
                 questions.add(new Question(
                         "What is the capital of India?",
-                        "Mumbai",
                         "New Delhi",
-                        "Kolkata",
                         "Chennai",
-                        2
+                        "Kolkata",
+                        "Mumbai",
+                        1
                 ));
 
                 questions.add(new Question(
                         "Which is the national animal of India?",
                         "Lion",
                         "Tiger",
-                        "Elephant",
                         "Leopard",
+                        "Elephant",
                         2
                 ));
 
@@ -56,19 +56,19 @@ public class QuestionBank {
 
                 questions.add(new Question(
                         "Which is the largest ocean on Earth?",
-                        "Atlantic Ocean",
-                        "Indian Ocean",
-                        "Pacific Ocean",
                         "Arctic Ocean",
-                        3
+                        "Pacific Ocean",
+                        "Indian Ocean",
+                        "Atlantic Ocean",
+                        2
                 ));
 
                 questions.add(new Question(
                         "Which planet is known as the Red Planet?",
-                        "Venus",
-                        "Mars",
                         "Jupiter",
+                        "Mars",
                         "Mercury",
+                        "Venus",
                         2
                 ));
 
@@ -83,9 +83,9 @@ public class QuestionBank {
 
                 questions.add(new Question(
                         "What is the national flower of India?",
-                        "Rose",
-                        "Lotus",
                         "Jasmine",
+                        "Lotus",
+                        "Rose",
                         "Sunflower",
                         2
                 ));
@@ -93,17 +93,17 @@ public class QuestionBank {
                 questions.add(new Question(
                         "Which is the longest river in India?",
                         "Ganga",
-                        "Yamuna",
                         "Godavari",
                         "Narmada",
+                        "Yamuna",
                         1
                 ));
 
                 questions.add(new Question(
                         "Who wrote the Indian national anthem?",
-                        "Bankim Chandra Chattopadhyay",
-                        "Rabindranath Tagore",
                         "Sarojini Naidu",
+                        "Rabindranath Tagore",
+                        "Bankim Chandra Chattopadhyay",
                         "Subhas Chandra Bose",
                         2
                 ));
@@ -111,9 +111,9 @@ public class QuestionBank {
                 questions.add(new Question(
                         "Which is the largest state of India by area?",
                         "Madhya Pradesh",
-                        "Maharashtra",
-                        "Rajasthan",
                         "Uttar Pradesh",
+                        "Rajasthan",
+                        "Maharashtra",
                         3
                 ));
             }
@@ -121,91 +121,91 @@ public class QuestionBank {
             if (level == 2) {
                 questions.add(new Question(
                         "Which is the smallest state of India by area?",
-                        "Goa",
                         "Sikkim",
-                        "Tripura",
+                        "Goa",
                         "Manipur",
-                        1
+                        "Tripura",
+                        2
                 ));
 
                 questions.add(new Question(
                         "Which city is known as the Pink City?",
-                        "Jaipur",
                         "Jodhpur",
+                        "Jaipur",
                         "Udaipur",
                         "Bikaner",
-                        1
+                        2
                 ));
 
                 questions.add(new Question(
                         "Which is the highest mountain peak in the world?",
+                        "Lhotse",
                         "K2",
                         "Mount Everest",
                         "Kangchenjunga",
-                        "Lhotse",
-                        2
+                        3
                 ));
 
                 questions.add(new Question(
                         "What is the national aquatic animal of India?",
                         "Blue Whale",
-                        "Ganges River Dolphin",
-                        "Crocodile",
                         "Turtle",
-                        2
+                        "Crocodile",
+                        "Ganges River Dolphin",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which Indian state has the longest coastline?",
-                        "Tamil Nadu",
                         "Gujarat",
-                        "Maharashtra",
                         "Andhra Pradesh",
-                        2
+                        "Tamil Nadu",
+                        "Maharashtra",
+                        1
                 ));
 
                 questions.add(new Question(
                         "Who was the first Indian to win a Nobel Prize?",
                         "C. V. Raman",
-                        "Rabindranath Tagore",
                         "Mother Teresa",
+                        "Rabindranath Tagore",
                         "Amartya Sen",
-                        2
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which organization conducts India's population census?",
-                        "RBI",
                         "Election Commission",
                         "Office of the Registrar General and Census Commissioner",
                         "NITI Aayog",
-                        3
+                        "RBI",
+                        2
                 ));
 
                 questions.add(new Question(
                         "What is the SI unit of temperature?",
                         "Celsius",
-                        "Kelvin",
                         "Fahrenheit",
+                        "Kelvin",
                         "Joule",
-                        2
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which is the largest desert in India?",
-                        "Thar Desert",
-                        "Kalahari Desert",
                         "Gobi Desert",
+                        "Kalahari Desert",
+                        "Thar Desert",
                         "Sahara Desert",
-                        1
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which Indian city is called the Silicon Valley of India?",
-                        "Hyderabad",
+                        "Chennai",
                         "Pune",
                         "Bengaluru",
-                        "Chennai",
+                        "Hyderabad",
                         3
                 ));
             }
@@ -213,92 +213,92 @@ public class QuestionBank {
             if (level == 3) {
                 questions.add(new Question(
                         "Which line divides the Earth into Northern and Southern Hemispheres?",
-                        "Tropic of Cancer",
-                        "Equator",
-                        "Prime Meridian",
                         "Arctic Circle",
-                        2
+                        "Prime Meridian",
+                        "Equator",
+                        "Tropic of Cancer",
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which is the largest freshwater lake in India by surface area?",
                         "Wular Lake",
-                        "Dal Lake",
                         "Loktak Lake",
+                        "Dal Lake",
                         "Chilika Lake",
                         1
                 ));
 
                 questions.add(new Question(
                         "The Tropic of Cancer passes through how many Indian states?",
-                        "6",
                         "7",
-                        "8",
+                        "6",
                         "9",
-                        3
+                        "8",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which is the deepest ocean trench known on Earth?",
-                        "Java Trench",
+                        "Puerto Rico Trench",
                         "Mariana Trench",
                         "Tonga Trench",
-                        "Puerto Rico Trench",
+                        "Java Trench",
                         2
                 ));
 
                 questions.add(new Question(
                         "Which country is known as the Land of the Rising Sun?",
                         "China",
-                        "Japan",
                         "Thailand",
+                        "Japan",
                         "South Korea",
-                        2
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which Indian state is famous for the Hornbill Festival?",
-                        "Assam",
-                        "Nagaland",
-                        "Meghalaya",
                         "Mizoram",
-                        2
+                        "Meghalaya",
+                        "Nagaland",
+                        "Assam",
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which is the largest island in India?",
-                        "Majuli",
-                        "Great Nicobar",
-                        "Diu",
                         "Elephanta",
-                        2
+                        "Diu",
+                        "Great Nicobar",
+                        "Majuli",
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which gas is most abundant in Earth's atmosphere?",
-                        "Oxygen",
-                        "Nitrogen",
-                        "Carbon dioxide",
                         "Argon",
-                        2
+                        "Oxygen",
+                        "Carbon dioxide",
+                        "Nitrogen",
+                        4
                 ));
 
                 questions.add(new Question(
                         "What is the study of earthquakes called?",
+                        "Geology",
                         "Ecology",
                         "Seismology",
                         "Meteorology",
-                        "Geology",
-                        2
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which Indian city is situated on the banks of the Sabarmati River?",
-                        "Ahmedabad",
+                        "Rajkot",
                         "Surat",
                         "Vadodara",
-                        "Rajkot",
-                        1
+                        "Ahmedabad",
+                        4
                 ));
             }
 
@@ -306,182 +306,182 @@ public class QuestionBank {
                 questions.add(new Question(
                         "Which strait separates India and Sri Lanka?",
                         "Malacca Strait",
+                        "Hormuz Strait",
                         "Palk Strait",
                         "Bering Strait",
-                        "Hormuz Strait",
-                        2
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which is the largest planet in the Solar System?",
-                        "Saturn",
-                        "Earth",
                         "Jupiter",
+                        "Earth",
                         "Neptune",
-                        3
+                        "Saturn",
+                        1
                 ));
 
                 questions.add(new Question(
                         "Which Indian state is the largest producer of tea?",
                         "Kerala",
-                        "Assam",
                         "West Bengal",
                         "Tamil Nadu",
-                        2
+                        "Assam",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which is the only continent through which all lines of longitude pass?",
-                        "Asia",
-                        "Africa",
-                        "Antarctica",
                         "Europe",
+                        "Asia",
+                        "Antarctica",
+                        "Africa",
                         3
                 ));
 
                 questions.add(new Question(
                         "Which country has the largest population in the world?",
                         "India",
+                        "Indonesia",
                         "China",
                         "USA",
-                        "Indonesia",
                         1
                 ));
 
                 questions.add(new Question(
                         "Which Indian river is also called Dakshin Ganga?",
-                        "Krishna",
-                        "Godavari",
                         "Kaveri",
                         "Mahanadi",
-                        2
+                        "Godavari",
+                        "Krishna",
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which is the world's largest hot desert?",
-                        "Gobi",
                         "Thar",
-                        "Sahara",
                         "Arabian Desert",
+                        "Sahara",
+                        "Gobi",
                         3
                 ));
 
                 questions.add(new Question(
                         "Which Indian state has the largest forest cover by area?",
+                        "Chhattisgarh",
                         "Madhya Pradesh",
                         "Arunachal Pradesh",
                         "Odisha",
-                        "Chhattisgarh",
-                        1
-                ));
-
-                questions.add(new Question(
-                        "Which is the largest internal organ of the human body?",
-                        "Heart",
-                        "Liver",
-                        "Lung",
-                        "Kidney",
                         2
                 ));
 
                 questions.add(new Question(
+                        "Which is the largest internal organ of the human body?",
+                        "Lung",
+                        "Kidney",
+                        "Heart",
+                        "Liver",
+                        4
+                ));
+
+                questions.add(new Question(
                         "Which Indian city is called the City of Lakes?",
-                        "Bhopal",
-                        "Jaipur",
-                        "Lucknow",
                         "Patna",
-                        1
+                        "Lucknow",
+                        "Jaipur",
+                        "Bhopal",
+                        4
                 ));
             }
 
             if (level == 5) {
                 questions.add(new Question(
                         "Which is the world's largest delta?",
-                        "Nile Delta",
                         "Ganges-Brahmaputra Delta",
                         "Mekong Delta",
+                        "Nile Delta",
                         "Mississippi Delta",
-                        2
+                        1
                 ));
 
                 questions.add(new Question(
                         "Which Indian pass connects Srinagar with Leh?",
                         "Nathu La",
-                        "Zoji La",
                         "Shipki La",
+                        "Zoji La",
                         "Bara-Lacha La",
-                        2
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which is the largest river island in India?",
-                        "Majuli",
                         "Diu",
                         "Elephanta",
+                        "Majuli",
                         "Srirangam",
-                        1
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which country is crossed by both the Equator and the Prime Meridian?",
+                        "No country",
+                        "Indonesia",
                         "Brazil",
                         "Ghana",
-                        "Indonesia",
-                        "No country",
-                        4
+                        1
                 ));
 
                 questions.add(new Question(
                         "Which ocean current is a warm current in the North Atlantic?",
                         "Labrador Current",
-                        "Gulf Stream",
                         "Peru Current",
+                        "Gulf Stream",
                         "Canary Current",
-                        2
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which Indian state has the maximum number of districts?",
-                        "Uttar Pradesh",
                         "Maharashtra",
+                        "Uttar Pradesh",
                         "Rajasthan",
                         "Madhya Pradesh",
-                        1
+                        2
                 ));
 
                 questions.add(new Question(
                         "Which is the world's largest coral reef system?",
-                        "Belize Barrier Reef",
-                        "Great Barrier Reef",
                         "Red Sea Reef",
+                        "Great Barrier Reef",
+                        "Belize Barrier Reef",
                         "Florida Reef",
                         2
                 ));
 
                 questions.add(new Question(
                         "Which Indian lake is famous for floating islands called phumdis?",
+                        "Vembanad",
+                        "Sambhar",
                         "Wular",
                         "Loktak",
-                        "Sambhar",
-                        "Vembanad",
-                        2
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which latitude is approximately 23.5 degrees north?",
+                        "Arctic Circle",
+                        "Tropic of Cancer",
                         "Tropic of Capricorn",
                         "Equator",
-                        "Tropic of Cancer",
-                        "Arctic Circle",
-                        3
+                        2
                 ));
 
                 questions.add(new Question(
                         "Which country is called the Land of a Thousand Lakes?",
-                        "Norway",
-                        "Finland",
                         "Sweden",
+                        "Finland",
                         "Iceland",
+                        "Norway",
                         2
                 ));
             }
@@ -489,92 +489,92 @@ public class QuestionBank {
             if (level == 6) {
                 questions.add(new Question(
                         "Which phenomenon explains the apparent deflection of winds due to Earth's rotation?",
-                        "Greenhouse effect",
-                        "Coriolis effect",
                         "Doppler effect",
+                        "Coriolis effect",
+                        "Greenhouse effect",
                         "Photoelectric effect",
                         2
                 ));
 
                 questions.add(new Question(
                         "Which Indian river forms the Dhuandhar Falls near Jabalpur?",
-                        "Narmada",
-                        "Tapti",
                         "Son",
                         "Betwa",
-                        1
+                        "Tapti",
+                        "Narmada",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which is the deepest lake in the world?",
-                        "Lake Superior",
-                        "Lake Baikal",
-                        "Lake Victoria",
                         "Caspian Sea",
-                        2
+                        "Lake Superior",
+                        "Lake Victoria",
+                        "Lake Baikal",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which country has the longest coastline in the world?",
+                        "Indonesia",
                         "Russia",
                         "Canada",
                         "Australia",
-                        "Indonesia",
-                        2
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which Indian state contains the cold desert of Ladakh?",
+                        "Ladakh",
                         "Himachal Pradesh",
                         "Jammu and Kashmir",
-                        "Ladakh",
                         "Uttarakhand",
-                        3
+                        1
                 ));
 
                 questions.add(new Question(
                         "Which ocean has the greatest average depth?",
-                        "Atlantic",
-                        "Indian",
                         "Pacific",
                         "Arctic",
-                        3
+                        "Indian",
+                        "Atlantic",
+                        1
                 ));
 
                 questions.add(new Question(
                         "Which river is known as the Sorrow of Bihar?",
                         "Ganga",
                         "Kosi",
-                        "Son",
                         "Gandak",
+                        "Son",
                         2
                 ));
 
                 questions.add(new Question(
                         "Which Indian city is located near the confluence of the Ganga and Yamuna?",
                         "Varanasi",
-                        "Prayagraj",
-                        "Kanpur",
                         "Agra",
-                        2
+                        "Kanpur",
+                        "Prayagraj",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which is the world's largest peninsula?",
                         "Arabian Peninsula",
                         "Indian Peninsula",
-                        "Scandinavian Peninsula",
                         "Iberian Peninsula",
+                        "Scandinavian Peninsula",
                         1
                 ));
 
                 questions.add(new Question(
                         "Which Indian state is known for the Sundarbans mangrove forest?",
-                        "Odisha",
                         "West Bengal",
                         "Andhra Pradesh",
                         "Kerala",
-                        2
+                        "Odisha",
+                        1
                 ));
             }
         }
@@ -587,181 +587,181 @@ public class QuestionBank {
                         "What does CPU stand for?",
                         "Central Processing Unit",
                         "Computer Personal Unit",
-                        "Central Program Utility",
                         "Control Processing Unit",
+                        "Central Program Utility",
                         1
                 ));
 
                 questions.add(new Question(
                         "What does RAM stand for?",
-                        "Random Access Memory",
-                        "Read Access Memory",
-                        "Rapid Application Memory",
                         "Run Access Module",
-                        1
+                        "Rapid Application Memory",
+                        "Read Access Memory",
+                        "Random Access Memory",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which device is used to type text?",
+                        "Speaker",
                         "Monitor",
                         "Keyboard",
-                        "Speaker",
                         "Printer",
-                        2
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which is an operating system?",
-                        "Google",
-                        "Windows",
-                        "Chrome",
                         "Facebook",
-                        2
+                        "Chrome",
+                        "Windows",
+                        "Google",
+                        3
                 ));
 
                 questions.add(new Question(
                         "What does URL stand for?",
-                        "Uniform Resource Locator",
-                        "Universal Resource Link",
                         "Uniform Reference Link",
+                        "Universal Resource Link",
                         "Universal Routing Locator",
-                        1
+                        "Uniform Resource Locator",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which language is mainly used to style web pages?",
                         "HTML",
-                        "CSS",
-                        "SQL",
                         "Python",
-                        2
+                        "SQL",
+                        "CSS",
+                        4
                 ));
 
                 questions.add(new Question(
                         "What does HTML stand for?",
-                        "Hyper Text Markup Language",
                         "High Text Machine Language",
                         "Hyperlink Text Management Language",
                         "Home Tool Markup Language",
-                        1
+                        "Hyper Text Markup Language",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which company develops Android?",
-                        "Microsoft",
-                        "Google",
                         "Apple",
                         "IBM",
-                        2
+                        "Google",
+                        "Microsoft",
+                        3
                 ));
 
                 questions.add(new Question(
                         "What is Git mainly used for?",
-                        "Video editing",
                         "Version control",
-                        "Photo editing",
                         "Database management",
-                        2
+                        "Photo editing",
+                        "Video editing",
+                        1
                 ));
 
                 questions.add(new Question(
                         "Which part of a computer displays visual output?",
+                        "Scanner",
+                        "Mouse",
                         "Keyboard",
                         "Monitor",
-                        "Mouse",
-                        "Scanner",
-                        2
+                        4
                 ));
             }
 
             if (level == 2) {
                 questions.add(new Question(
                         "Which language is used to add structure to web pages?",
-                        "HTML",
                         "CSS",
-                        "SQL",
+                        "HTML",
                         "Bash",
-                        1
-                ));
-
-                questions.add(new Question(
-                        "Which language is commonly used to program Android apps in this project?",
-                        "Python",
-                        "Java",
-                        "PHP",
                         "SQL",
                         2
                 ));
 
                 questions.add(new Question(
+                        "Which language is commonly used to program Android apps in this project?",
+                        "Python",
+                        "SQL",
+                        "Java",
+                        "PHP",
+                        3
+                ));
+
+                questions.add(new Question(
                         "What does SQL stand for?",
-                        "Structured Query Language",
-                        "Simple Query Language",
                         "System Query Logic",
                         "Sequential Question Language",
-                        1
+                        "Structured Query Language",
+                        "Simple Query Language",
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which device connects a computer to a network?",
                         "Router",
-                        "Monitor",
                         "Keyboard",
                         "Projector",
+                        "Monitor",
                         1
                 ));
 
                 questions.add(new Question(
                         "What is a database?",
-                        "A collection of organized data",
-                        "A display device",
-                        "A programming language",
                         "An operating system",
-                        1
+                        "A collection of organized data",
+                        "A programming language",
+                        "A display device",
+                        2
                 ));
 
                 questions.add(new Question(
                         "Which is a web browser?",
-                        "Chrome",
-                        "Linux",
                         "Oracle",
+                        "Linux",
                         "Python",
-                        1
+                        "Chrome",
+                        4
                 ));
 
                 questions.add(new Question(
                         "What does HTTP stand for?",
-                        "HyperText Transfer Protocol",
-                        "HighText Transmission Program",
                         "Hyperlink Transfer Process",
+                        "HighText Transmission Program",
                         "Host Transfer Protocol",
-                        1
+                        "HyperText Transfer Protocol",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which storage device has no moving mechanical parts?",
-                        "HDD",
-                        "SSD",
                         "Floppy disk",
+                        "SSD",
                         "Tape drive",
+                        "HDD",
                         2
                 ));
 
                 questions.add(new Question(
                         "What does PDF stand for?",
                         "Portable Document Format",
+                        "Program Data Format",
                         "Personal Data File",
                         "Public Document Form",
-                        "Program Data Format",
                         1
                 ));
 
                 questions.add(new Question(
                         "Which symbol is commonly used for comments in Java?",
                         "//",
-                        "##",
-                        "<!--",
                         "**",
+                        "<!--",
+                        "##",
                         1
                 ));
             }
@@ -769,92 +769,92 @@ public class QuestionBank {
             if (level == 3) {
                 questions.add(new Question(
                         "Which data structure follows LIFO?",
+                        "Graph",
+                        "Tree",
                         "Queue",
                         "Stack",
-                        "Tree",
-                        "Graph",
-                        2
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which data structure follows FIFO?",
-                        "Stack",
                         "Queue",
-                        "Heap",
                         "Tree",
-                        2
-                ));
-
-                questions.add(new Question(
-                        "Which protocol is used to securely browse websites?",
-                        "HTTP",
-                        "HTTPS",
-                        "FTP",
-                        "SMTP",
-                        2
-                ));
-
-                questions.add(new Question(
-                        "What does API stand for?",
-                        "Application Programming Interface",
-                        "Applied Program Internet",
-                        "Application Process Integration",
-                        "Advanced Programming Input",
+                        "Stack",
+                        "Heap",
                         1
                 ));
 
                 questions.add(new Question(
+                        "Which protocol is used to securely browse websites?",
+                        "FTP",
+                        "SMTP",
+                        "HTTP",
+                        "HTTPS",
+                        4
+                ));
+
+                questions.add(new Question(
+                        "What does API stand for?",
+                        "Advanced Programming Input",
+                        "Applied Program Internet",
+                        "Application Process Integration",
+                        "Application Programming Interface",
+                        4
+                ));
+
+                questions.add(new Question(
                         "Which SQL command is used to retrieve data?",
-                        "INSERT",
+                        "DELETE",
                         "SELECT",
                         "UPDATE",
-                        "DELETE",
+                        "INSERT",
                         2
                 ));
 
                 questions.add(new Question(
                         "Which SQL command adds a new row?",
-                        "INSERT",
-                        "SELECT",
-                        "ALTER",
                         "DROP",
-                        1
+                        "SELECT",
+                        "INSERT",
+                        "ALTER",
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which keyword is used to create a class in Java?",
-                        "class",
                         "define",
-                        "struct",
                         "object",
-                        1
+                        "class",
+                        "struct",
+                        3
                 ));
 
                 questions.add(new Question(
                         "What is an IP address used for?",
                         "Identifying a device/interface on a network",
-                        "Editing images",
                         "Compressing files",
+                        "Editing images",
                         "Formatting text",
                         1
                 ));
 
                 questions.add(new Question(
                         "Which is an example of a relational database?",
-                        "MySQL",
                         "Photoshop",
-                        "Android",
                         "Git",
-                        1
+                        "MySQL",
+                        "Android",
+                        3
                 ));
 
                 questions.add(new Question(
                         "What does IDE stand for?",
-                        "Integrated Development Environment",
                         "Internet Development Engine",
-                        "Integrated Data Editor",
                         "Internal Design Environment",
-                        1
+                        "Integrated Development Environment",
+                        "Integrated Data Editor",
+                        3
                 ));
             }
 
@@ -862,90 +862,90 @@ public class QuestionBank {
                 questions.add(new Question(
                         "Which HTTP status code means Not Found?",
                         "200",
-                        "301",
-                        "404",
                         "500",
+                        "404",
+                        "301",
                         3
                 ));
 
                 questions.add(new Question(
                         "Which HTTP method is commonly used to update a complete resource?",
+                        "TRACE",
                         "GET",
                         "POST",
                         "PUT",
-                        "TRACE",
-                        3
+                        4
                 ));
 
                 questions.add(new Question(
                         "What is normalization in databases mainly used for?",
                         "Reducing redundancy",
+                        "Compiling code",
                         "Increasing screen size",
                         "Encrypting passwords",
-                        "Compiling code",
                         1
                 ));
 
                 questions.add(new Question(
                         "Which key uniquely identifies a row in a relational table?",
-                        "Foreign key",
                         "Primary key",
-                        "Candidate file",
+                        "Foreign key",
                         "Index page",
-                        2
+                        "Candidate file",
+                        1
                 ));
 
                 questions.add(new Question(
                         "What does JSON stand for?",
-                        "JavaScript Object Notation",
                         "Java Source Object Network",
-                        "Joined Standard Object Notation",
                         "JavaScript Online Network",
-                        1
+                        "JavaScript Object Notation",
+                        "Joined Standard Object Notation",
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which algorithmic complexity describes binary search on a sorted array?",
-                        "O(n)",
                         "O(log n)",
+                        "O(n)",
                         "O(n²)",
                         "O(2n)",
-                        2
+                        1
                 ));
 
                 questions.add(new Question(
                         "What is polymorphism in object-oriented programming?",
-                        "One interface with multiple forms",
                         "Only one object",
-                        "Deleting a class",
                         "Storing files",
-                        1
+                        "Deleting a class",
+                        "One interface with multiple forms",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which Git command creates a local copy of a remote repository?",
-                        "git push",
-                        "git clone",
-                        "git merge",
                         "git reset",
-                        2
+                        "git push",
+                        "git merge",
+                        "git clone",
+                        4
                 ));
 
                 questions.add(new Question(
                         "What is DNS mainly responsible for?",
-                        "Mapping domain names to IP addresses",
-                        "Encrypting disks",
-                        "Compiling Java",
                         "Storing images",
-                        1
+                        "Mapping domain names to IP addresses",
+                        "Compiling Java",
+                        "Encrypting disks",
+                        2
                 ));
 
                 questions.add(new Question(
                         "Which layer of the OSI model handles routing?",
                         "Physical",
-                        "Data Link",
-                        "Network",
                         "Presentation",
+                        "Network",
+                        "Data Link",
                         3
                 ));
             }
@@ -962,83 +962,83 @@ public class QuestionBank {
 
                 questions.add(new Question(
                         "Which traversal is naturally implemented using a stack?",
-                        "Breadth-first search",
-                        "Depth-first search",
                         "Level-order only",
+                        "Depth-first search",
                         "Hash search",
+                        "Breadth-first search",
                         2
                 ));
 
                 questions.add(new Question(
                         "What is a hash function used for in a hash table?",
-                        "Mapping keys to positions",
-                        "Sorting images",
-                        "Compiling code",
                         "Opening ports",
-                        1
+                        "Mapping keys to positions",
+                        "Compiling code",
+                        "Sorting images",
+                        2
                 ));
 
                 questions.add(new Question(
                         "Which ACID property means a transaction is all-or-nothing?",
-                        "Consistency",
-                        "Isolation",
                         "Atomicity",
+                        "Consistency",
                         "Durability",
-                        3
+                        "Isolation",
+                        1
                 ));
 
                 questions.add(new Question(
                         "What does CAP theorem discuss in distributed systems?",
-                        "Consistency, availability and partition tolerance",
                         "Classes, arrays and pointers",
+                        "Consistency, availability and partition tolerance",
                         "CPU, API and processes",
                         "Caching, authentication and privacy",
-                        1
+                        2
                 ));
 
                 questions.add(new Question(
                         "Which technique helps prevent SQL injection?",
+                        "Using larger tables",
+                        "Disabling indexes",
                         "Parameterized queries",
                         "String concatenation",
-                        "Disabling indexes",
-                        "Using larger tables",
-                        1
+                        3
                 ));
 
                 questions.add(new Question(
                         "What is a deadlock in operating systems?",
-                        "Processes wait indefinitely for resources",
                         "A crashed monitor",
+                        "Processes wait indefinitely for resources",
                         "A full hard disk",
                         "A syntax error",
-                        1
+                        2
                 ));
 
                 questions.add(new Question(
                         "Which memory is typically fastest among these?",
                         "Hard disk",
-                        "RAM",
                         "CPU cache",
                         "Optical disk",
-                        3
+                        "RAM",
+                        2
                 ));
 
                 questions.add(new Question(
                         "What does REST commonly emphasize for web services?",
                         "Stateless client-server interaction",
                         "Desktop-only applications",
-                        "Binary-only communication",
                         "Local-only storage",
+                        "Binary-only communication",
                         1
                 ));
 
                 questions.add(new Question(
                         "Which Git command uploads local commits to a remote repository?",
-                        "git pull",
                         "git push",
+                        "git pull",
                         "git fetch",
                         "git init",
-                        2
+                        1
                 ));
             }
 
@@ -1046,8 +1046,8 @@ public class QuestionBank {
                 questions.add(new Question(
                         "Which scheduling algorithm can cause starvation if priorities are not managed?",
                         "Priority scheduling",
-                        "FCFS only",
                         "Round robin only",
+                        "FCFS only",
                         "FIFO queue",
                         1
                 ));
@@ -1056,63 +1056,63 @@ public class QuestionBank {
                         "What is virtual memory?",
                         "Using secondary storage to extend apparent memory",
                         "A faster CPU",
-                        "A type of monitor",
                         "A network cable",
+                        "A type of monitor",
                         1
                 ));
 
                 questions.add(new Question(
                         "Which database index structure is commonly used for range queries?",
+                        "Bitmap image",
                         "B-tree",
                         "Stack",
                         "Queue",
-                        "Bitmap image",
-                        1
+                        2
                 ));
 
                 questions.add(new Question(
                         "What does idempotent mean for an HTTP operation?",
-                        "Repeating it has the same intended effect",
                         "It always fails",
-                        "It requires a browser",
                         "It encrypts data",
-                        1
+                        "It requires a browser",
+                        "Repeating it has the same intended effect",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which cryptographic approach uses a public and private key pair?",
-                        "Asymmetric cryptography",
                         "Hashing only",
-                        "Plain text",
                         "Compression",
-                        1
+                        "Asymmetric cryptography",
+                        "Plain text",
+                        3
                 ));
 
                 questions.add(new Question(
                         "What is a race condition?",
-                        "Output depends on uncontrolled timing of concurrent operations",
                         "A network speed test",
-                        "A CPU benchmark",
                         "A syntax rule",
-                        1
+                        "Output depends on uncontrolled timing of concurrent operations",
+                        "A CPU benchmark",
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which design principle suggests a class should have one reason to change?",
-                        "Single Responsibility Principle",
-                        "Open/Closed Principle",
-                        "Liskov Principle",
                         "Dependency Inversion only",
-                        1
+                        "Open/Closed Principle",
+                        "Single Responsibility Principle",
+                        "Liskov Principle",
+                        3
                 ));
 
                 questions.add(new Question(
                         "What is memoization?",
-                        "Caching results of expensive function calls",
-                        "Deleting variables",
-                        "Encrypting databases",
                         "Compressing source code",
-                        1
+                        "Encrypting databases",
+                        "Deleting variables",
+                        "Caching results of expensive function calls",
+                        4
                 ));
 
                 questions.add(new Question(
@@ -1126,11 +1126,11 @@ public class QuestionBank {
 
                 questions.add(new Question(
                         "What is containerization primarily used for?",
-                        "Packaging an application with its dependencies",
                         "Increasing monitor resolution",
                         "Replacing all databases",
+                        "Packaging an application with its dependencies",
                         "Editing source images",
-                        1
+                        3
                 ));
             }
         }
@@ -1141,17 +1141,17 @@ public class QuestionBank {
             if (level == 1) {
                 questions.add(new Question(
                         "Which planet is known as the Red Planet?",
-                        "Earth",
                         "Mars",
-                        "Jupiter",
                         "Venus",
-                        2
+                        "Earth",
+                        "Jupiter",
+                        1
                 ));
 
                 questions.add(new Question(
                         "What is the chemical formula of water?",
-                        "CO2",
                         "O2",
+                        "CO2",
                         "H2O",
                         "NaCl",
                         3
@@ -1160,110 +1160,110 @@ public class QuestionBank {
                 questions.add(new Question(
                         "Which gas do plants absorb during photosynthesis?",
                         "Oxygen",
-                        "Nitrogen",
                         "Carbon dioxide",
                         "Hydrogen",
-                        3
+                        "Nitrogen",
+                        2
                 ));
 
                 questions.add(new Question(
                         "What is the largest organ in the human body?",
-                        "Heart",
                         "Brain",
-                        "Skin",
                         "Liver",
+                        "Skin",
+                        "Heart",
                         3
                 ));
 
                 questions.add(new Question(
                         "How many bones are there in an adult human body?",
-                        "196",
-                        "206",
                         "216",
                         "226",
-                        2
-                ));
-
-                questions.add(new Question(
-                        "Which is the nearest star to Earth?",
-                        "Moon",
-                        "Mars",
-                        "Sun",
-                        "Venus",
+                        "206",
+                        "196",
                         3
                 ));
 
                 questions.add(new Question(
+                        "Which is the nearest star to Earth?",
+                        "Mars",
+                        "Sun",
+                        "Moon",
+                        "Venus",
+                        2
+                ));
+
+                questions.add(new Question(
                         "What force keeps us on the ground?",
-                        "Magnetic force",
-                        "Gravitational force",
                         "Frictional force",
+                        "Gravitational force",
                         "Electric force",
+                        "Magnetic force",
                         2
                 ));
 
                 questions.add(new Question(
                         "Which vitamin is produced in the skin with sunlight exposure?",
-                        "Vitamin A",
-                        "Vitamin B",
-                        "Vitamin C",
                         "Vitamin D",
-                        4
+                        "Vitamin B",
+                        "Vitamin A",
+                        "Vitamin C",
+                        1
                 ));
 
                 questions.add(new Question(
                         "What is the boiling point of water at sea level?",
-                        "50°C",
                         "75°C",
-                        "100°C",
                         "150°C",
-                        3
+                        "50°C",
+                        "100°C",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which organ pumps blood throughout the body?",
-                        "Lungs",
-                        "Brain",
                         "Heart",
                         "Kidney",
-                        3
+                        "Lungs",
+                        "Brain",
+                        1
                 ));
             }
 
             if (level == 2) {
                 questions.add(new Question(
                         "What is the basic unit of life?",
-                        "Atom",
                         "Cell",
+                        "Atom",
                         "Tissue",
                         "Organ",
-                        2
+                        1
                 ));
 
                 questions.add(new Question(
                         "Which gas is essential for human respiration?",
                         "Oxygen",
+                        "Helium",
                         "Nitrogen",
                         "Carbon dioxide",
-                        "Helium",
                         1
                 ));
 
                 questions.add(new Question(
                         "What is the center of an atom called?",
+                        "Molecule",
+                        "Shell",
                         "Electron cloud",
                         "Nucleus",
-                        "Shell",
-                        "Molecule",
-                        2
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which blood cells help fight infections?",
-                        "Red blood cells",
-                        "White blood cells",
                         "Platelets",
+                        "White blood cells",
                         "Plasma cells only",
+                        "Red blood cells",
                         2
                 ));
 
@@ -1271,8 +1271,8 @@ public class QuestionBank {
                         "Which part of a plant mainly absorbs water?",
                         "Flower",
                         "Root",
-                        "Fruit",
                         "Stem",
+                        "Fruit",
                         2
                 ));
 
@@ -1280,43 +1280,43 @@ public class QuestionBank {
                         "What is the SI unit of force?",
                         "Joule",
                         "Newton",
-                        "Watt",
                         "Pascal",
+                        "Watt",
                         2
                 ));
 
                 questions.add(new Question(
                         "Which metal is liquid at room temperature?",
-                        "Iron",
-                        "Mercury",
                         "Copper",
                         "Aluminium",
-                        2
+                        "Iron",
+                        "Mercury",
+                        4
                 ));
 
                 questions.add(new Question(
                         "What is the process by which plants make food?",
-                        "Respiration",
                         "Photosynthesis",
                         "Digestion",
+                        "Respiration",
                         "Fermentation",
-                        2
-                ));
-
-                questions.add(new Question(
-                        "Which organ is primarily responsible for filtering blood?",
-                        "Kidney",
-                        "Lung",
-                        "Stomach",
-                        "Brain",
                         1
                 ));
 
                 questions.add(new Question(
+                        "Which organ is primarily responsible for filtering blood?",
+                        "Brain",
+                        "Stomach",
+                        "Kidney",
+                        "Lung",
+                        3
+                ));
+
+                questions.add(new Question(
                         "Sound cannot travel through which medium?",
-                        "Air",
-                        "Water",
                         "Steel",
+                        "Water",
+                        "Air",
                         "Vacuum",
                         4
                 ));
@@ -1325,267 +1325,267 @@ public class QuestionBank {
             if (level == 3) {
                 questions.add(new Question(
                         "Which particle has a negative electric charge?",
+                        "Photon",
+                        "Electron",
                         "Proton",
                         "Neutron",
-                        "Electron",
-                        "Photon",
-                        3
-                ));
-
-                questions.add(new Question(
-                        "What is the SI unit of power?",
-                        "Joule",
-                        "Watt",
-                        "Newton",
-                        "Volt",
                         2
                 ));
 
                 questions.add(new Question(
+                        "What is the SI unit of power?",
+                        "Volt",
+                        "Newton",
+                        "Watt",
+                        "Joule",
+                        3
+                ));
+
+                questions.add(new Question(
                         "Which gas is mainly responsible for the greenhouse effect among these?",
-                        "Oxygen",
-                        "Carbon dioxide",
-                        "Nitrogen",
                         "Hydrogen",
+                        "Carbon dioxide",
+                        "Oxygen",
+                        "Nitrogen",
                         2
                 ));
 
                 questions.add(new Question(
                         "What is the pH of a neutral solution at 25°C?",
-                        "0",
                         "5",
                         "7",
+                        "0",
                         "14",
-                        3
+                        2
                 ));
 
                 questions.add(new Question(
                         "Which law states that every action has an equal and opposite reaction?",
-                        "Newton's First Law",
-                        "Newton's Second Law",
                         "Newton's Third Law",
                         "Ohm's Law",
-                        3
+                        "Newton's Second Law",
+                        "Newton's First Law",
+                        1
                 ));
 
                 questions.add(new Question(
                         "What is the powerhouse of the cell?",
+                        "Golgi body",
                         "Nucleus",
                         "Ribosome",
                         "Mitochondrion",
-                        "Golgi body",
-                        3
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which blood group is commonly called the universal donor for red cells?",
-                        "AB positive",
                         "O negative",
+                        "AB positive",
                         "A positive",
                         "B negative",
-                        2
+                        1
                 ));
 
                 questions.add(new Question(
                         "What is the speed of light in vacuum approximately?",
                         "3 × 10^6 m/s",
                         "3 × 10^8 m/s",
-                        "3 × 10^10 m/s",
                         "3 × 10^12 m/s",
+                        "3 × 10^10 m/s",
                         2
                 ));
 
                 questions.add(new Question(
                         "Which lens is used to correct myopia?",
-                        "Convex",
                         "Concave",
-                        "Cylindrical only",
                         "Bifocal only",
-                        2
+                        "Convex",
+                        "Cylindrical only",
+                        1
                 ));
 
                 questions.add(new Question(
                         "Which hormone regulates blood glucose level?",
-                        "Insulin",
+                        "Melatonin",
                         "Adrenaline",
                         "Thyroxine",
-                        "Melatonin",
-                        1
+                        "Insulin",
+                        4
                 ));
             }
 
             if (level == 4) {
                 questions.add(new Question(
                         "What is Avogadro's number approximately?",
-                        "6.022 × 10^23",
-                        "6.022 × 10^20",
                         "9.8 × 10^23",
+                        "6.022 × 10^23",
                         "3.14 × 10^23",
-                        1
+                        "6.022 × 10^20",
+                        2
                 ));
 
                 questions.add(new Question(
                         "Which principle explains why a ship floats?",
-                        "Archimedes' principle",
-                        "Pascal's law",
                         "Hooke's law",
                         "Boyle's law",
-                        1
+                        "Archimedes' principle",
+                        "Pascal's law",
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which electromagnetic wave has the shortest wavelength?",
-                        "Radio waves",
-                        "Microwaves",
                         "Visible light",
                         "Gamma rays",
-                        4
+                        "Radio waves",
+                        "Microwaves",
+                        2
                 ));
 
                 questions.add(new Question(
                         "What is the SI unit of electric resistance?",
                         "Volt",
-                        "Ohm",
                         "Ampere",
+                        "Ohm",
                         "Watt",
-                        2
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which organelle is responsible for protein synthesis?",
                         "Ribosome",
-                        "Lysosome",
                         "Vacuole",
+                        "Lysosome",
                         "Centrosome",
                         1
                 ));
 
                 questions.add(new Question(
                         "Which process converts liquid into gas?",
+                        "Sublimation only",
+                        "Freezing",
                         "Condensation",
                         "Evaporation",
-                        "Freezing",
-                        "Sublimation only",
-                        2
+                        4
                 ));
 
                 questions.add(new Question(
                         "What is the main component of natural gas?",
-                        "Methane",
-                        "Ethane",
                         "Propane",
                         "Butane",
-                        1
+                        "Ethane",
+                        "Methane",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which type of reaction releases heat?",
-                        "Endothermic",
                         "Exothermic",
                         "Neutralization only",
                         "Photochemical only",
-                        2
+                        "Endothermic",
+                        1
                 ));
 
                 questions.add(new Question(
                         "Which part of the brain controls balance and coordination?",
-                        "Cerebrum",
-                        "Cerebellum",
                         "Medulla",
+                        "Cerebrum",
                         "Hypothalamus",
-                        2
+                        "Cerebellum",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which acid is present in the stomach?",
-                        "Sulfuric acid",
-                        "Hydrochloric acid",
                         "Nitric acid",
                         "Acetic acid",
-                        2
+                        "Hydrochloric acid",
+                        "Sulfuric acid",
+                        3
                 ));
             }
 
             if (level == 5) {
                 questions.add(new Question(
                         "What is the approximate acceleration due to gravity near Earth's surface?",
-                        "4.9 m/s²",
-                        "9.8 m/s²",
                         "19.6 m/s²",
                         "98 m/s²",
-                        2
+                        "9.8 m/s²",
+                        "4.9 m/s²",
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which quantum number describes the shape of an orbital?",
+                        "Magnetic",
                         "Principal",
                         "Azimuthal",
-                        "Magnetic",
                         "Spin",
-                        2
+                        3
                 ));
 
                 questions.add(new Question(
                         "What is the genetic material in most organisms?",
                         "DNA",
-                        "ATP",
-                        "Glucose",
                         "Lipid",
+                        "Glucose",
+                        "ATP",
                         1
                 ));
 
                 questions.add(new Question(
                         "Which phenomenon causes the bending of light when it enters another medium?",
                         "Reflection",
-                        "Refraction",
-                        "Diffraction only",
                         "Polarization only",
-                        2
+                        "Diffraction only",
+                        "Refraction",
+                        4
                 ));
 
                 questions.add(new Question(
                         "What is the oxidation state of oxygen usually in water?",
-                        "+2",
-                        "-2",
                         "0",
                         "+1",
-                        2
+                        "+2",
+                        "-2",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which enzyme begins carbohydrate digestion in the mouth?",
-                        "Pepsin",
-                        "Amylase",
                         "Lipase",
+                        "Pepsin",
                         "Trypsin",
-                        2
+                        "Amylase",
+                        4
                 ));
 
                 questions.add(new Question(
                         "What is the function of hemoglobin?",
                         "Transport oxygen",
                         "Digest fats",
-                        "Produce insulin",
                         "Filter urine",
+                        "Produce insulin",
                         1
                 ));
 
                 questions.add(new Question(
                         "Which nuclear process powers the Sun?",
                         "Nuclear fission",
+                        "Combustion",
                         "Nuclear fusion",
                         "Radioactive decay",
-                        "Combustion",
-                        2
+                        3
                 ));
 
                 questions.add(new Question(
                         "What is the Doppler effect?",
-                        "Change in observed frequency due to relative motion",
-                        "Splitting of atoms",
                         "Reflection of heat",
+                        "Change in observed frequency due to relative motion",
                         "Change in mass",
-                        1
+                        "Splitting of atoms",
+                        2
                 ));
 
                 questions.add(new Question(
@@ -1602,9 +1602,9 @@ public class QuestionBank {
                 questions.add(new Question(
                         "Which equation relates energy and mass in special relativity?",
                         "E = mc²",
+                        "V = IR",
                         "F = ma",
                         "PV = nRT",
-                        "V = IR",
                         1
                 ));
 
@@ -1612,35 +1612,35 @@ public class QuestionBank {
                         "What is entropy most closely associated with?",
                         "Measure of disorder or energy dispersal",
                         "Electric charge",
-                        "Mass density",
                         "Magnetic field strength",
+                        "Mass density",
                         1
                 ));
 
                 questions.add(new Question(
                         "Which particle mediates the electromagnetic force?",
-                        "Photon",
-                        "Gluon",
                         "Electron",
+                        "Gluon",
+                        "Photon",
                         "Neutron",
-                        1
+                        3
                 ));
 
                 questions.add(new Question(
                         "What is the approximate pKa of acetic acid?",
-                        "2.76",
-                        "4.76",
                         "7.00",
+                        "4.76",
                         "9.25",
+                        "2.76",
                         2
                 ));
 
                 questions.add(new Question(
                         "Which cellular process produces most ATP aerobically?",
-                        "Glycolysis only",
-                        "Oxidative phosphorylation",
                         "Transcription",
+                        "Oxidative phosphorylation",
                         "Translation",
+                        "Glycolysis only",
                         2
                 ));
 
@@ -1656,37 +1656,37 @@ public class QuestionBank {
                 questions.add(new Question(
                         "Which law relates pressure and volume of a fixed amount of gas at constant temperature?",
                         "Boyle's law",
-                        "Charles's law",
                         "Avogadro's law",
+                        "Charles's law",
                         "Faraday's law",
                         1
                 ));
 
                 questions.add(new Question(
                         "What is a catalyst's main effect on a reaction?",
-                        "Lowers activation energy",
                         "Changes equilibrium constant",
-                        "Gets permanently consumed",
                         "Changes products",
-                        1
+                        "Lowers activation energy",
+                        "Gets permanently consumed",
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which particle has no electric charge?",
                         "Proton",
                         "Electron",
-                        "Neutron",
                         "Positron",
-                        3
+                        "Neutron",
+                        4
                 ));
 
                 questions.add(new Question(
                         "What is the main cause of Earth's seasons?",
-                        "Earth's axial tilt",
-                        "Distance from Sun alone",
                         "Moon's gravity",
+                        "Earth's axial tilt",
                         "Ocean currents",
-                        1
+                        "Distance from Sun alone",
+                        2
                 ));
             }
         }
@@ -1697,184 +1697,184 @@ public class QuestionBank {
             if (level == 1) {
                 questions.add(new Question(
                         "Who founded the Maurya Empire?",
-                        "Ashoka",
-                        "Chandragupta Maurya",
-                        "Bindusara",
                         "Harsha",
-                        2
+                        "Ashoka",
+                        "Bindusara",
+                        "Chandragupta Maurya",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Who was known as the Father of the Nation in India?",
-                        "Jawaharlal Nehru",
                         "Mahatma Gandhi",
                         "Sardar Patel",
                         "B. R. Ambedkar",
-                        2
+                        "Jawaharlal Nehru",
+                        1
                 ));
 
                 questions.add(new Question(
                         "In which year did India gain independence?",
+                        "1952",
                         "1945",
                         "1947",
                         "1950",
-                        "1952",
-                        2
+                        3
                 ));
 
                 questions.add(new Question(
                         "Who built the Taj Mahal?",
-                        "Akbar",
-                        "Shah Jahan",
-                        "Aurangzeb",
                         "Humayun",
-                        2
+                        "Akbar",
+                        "Aurangzeb",
+                        "Shah Jahan",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Who was the first Mughal emperor of India?",
-                        "Akbar",
-                        "Babur",
                         "Humayun",
+                        "Akbar",
                         "Jahangir",
-                        2
+                        "Babur",
+                        4
                 ));
 
                 questions.add(new Question(
                         "The Battle of Plassey was fought in which year?",
                         "1757",
-                        "1764",
-                        "1857",
                         "1707",
+                        "1857",
+                        "1764",
                         1
                 ));
 
                 questions.add(new Question(
                         "Who founded the Maratha Empire?",
-                        "Bajirao I",
-                        "Chhatrapati Shivaji Maharaj",
                         "Sambhaji Maharaj",
+                        "Bajirao I",
                         "Balaji Vishwanath",
-                        2
+                        "Chhatrapati Shivaji Maharaj",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Who gave the slogan 'Do or Die'?",
+                        "Bal Gangadhar Tilak",
                         "Subhas Chandra Bose",
                         "Mahatma Gandhi",
                         "Bhagat Singh",
-                        "Bal Gangadhar Tilak",
-                        2
+                        3
                 ));
 
                 questions.add(new Question(
                         "The Dandi March was associated with which movement?",
-                        "Quit India Movement",
+                        "Non-Cooperation Movement",
                         "Civil Disobedience Movement",
                         "Swadeshi Movement",
-                        "Non-Cooperation Movement",
+                        "Quit India Movement",
                         2
                 ));
 
                 questions.add(new Question(
                         "Who was the first President of independent India?",
-                        "Rajendra Prasad",
                         "S. Radhakrishnan",
-                        "Jawaharlal Nehru",
                         "Sardar Patel",
-                        1
+                        "Rajendra Prasad",
+                        "Jawaharlal Nehru",
+                        3
                 ));
             }
 
             if (level == 2) {
                 questions.add(new Question(
                         "Who was the last major Mauryan emperor?",
-                        "Chandragupta Maurya",
-                        "Ashoka",
                         "Bindusara",
                         "Brihadratha",
-                        2
+                        "Chandragupta Maurya",
+                        "Ashoka",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which ancient university was located in present-day Bihar?",
-                        "Nalanda",
+                        "All of these",
                         "Takshashila",
                         "Vikramashila",
-                        "All of these",
-                        4
+                        "Nalanda",
+                        1
                 ));
 
                 questions.add(new Question(
                         "Who wrote Arthashastra?",
                         "Kalidasa",
+                        "Megasthenes",
                         "Kautilya",
                         "Banabhatta",
-                        "Megasthenes",
-                        2
-                ));
-
-                questions.add(new Question(
-                        "Who was the founder of the Gupta dynasty?",
-                        "Chandragupta I",
-                        "Samudragupta",
-                        "Sri Gupta",
-                        "Skandagupta",
                         3
                 ));
 
                 questions.add(new Question(
+                        "Who was the founder of the Gupta dynasty?",
+                        "Sri Gupta",
+                        "Chandragupta I",
+                        "Skandagupta",
+                        "Samudragupta",
+                        1
+                ));
+
+                questions.add(new Question(
                         "Which ruler is associated with the Kalinga War?",
+                        "Kanishka",
+                        "Harsha",
                         "Chandragupta Maurya",
                         "Ashoka",
-                        "Harsha",
-                        "Kanishka",
-                        2
+                        4
                 ));
 
                 questions.add(new Question(
                         "Who founded the Slave Dynasty?",
-                        "Qutb-ud-din Aibak",
-                        "Iltutmish",
-                        "Balban",
                         "Alauddin Khalji",
-                        1
+                        "Balban",
+                        "Iltutmish",
+                        "Qutb-ud-din Aibak",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Who introduced the Mansabdari system in the Mughal Empire?",
-                        "Akbar",
                         "Babur",
                         "Shah Jahan",
+                        "Akbar",
                         "Aurangzeb",
-                        1
+                        3
                 ));
 
                 questions.add(new Question(
                         "Who wrote Akbarnama?",
-                        "Abul Fazl",
-                        "Amir Khusrau",
-                        "Badauni",
                         "Tulsidas",
-                        1
+                        "Badauni",
+                        "Amir Khusrau",
+                        "Abul Fazl",
+                        4
                 ));
 
                 questions.add(new Question(
                         "The Revolt of 1857 began at which place?",
-                        "Delhi",
-                        "Meerut",
-                        "Kanpur",
                         "Lucknow",
-                        2
+                        "Kanpur",
+                        "Meerut",
+                        "Delhi",
+                        3
                 ));
 
                 questions.add(new Question(
                         "Who founded the Indian National Congress?",
-                        "A. O. Hume",
-                        "Dadabhai Naoroji",
-                        "Gopal Krishna Gokhale",
                         "W. C. Bonnerjee",
-                        1
+                        "A. O. Hume",
+                        "Gopal Krishna Gokhale",
+                        "Dadabhai Naoroji",
+                        2
                 ));
             }
 
@@ -1882,129 +1882,129 @@ public class QuestionBank {
                 questions.add(new Question(
                         "Which dynasty built the Brihadeeswarar Temple at Thanjavur?",
                         "Chola",
-                        "Pallava",
                         "Chalukya",
                         "Gupta",
+                        "Pallava",
                         1
                 ));
 
                 questions.add(new Question(
                         "Who was the author of Rajatarangini?",
                         "Kalhana",
-                        "Kalidasa",
                         "Banabhatta",
+                        "Kalidasa",
                         "Vishakhadatta",
                         1
                 ));
 
                 questions.add(new Question(
                         "Which Gupta ruler is known for extensive conquests?",
-                        "Chandragupta II",
-                        "Samudragupta",
-                        "Skandagupta",
                         "Kumaragupta",
-                        2
+                        "Chandragupta II",
+                        "Skandagupta",
+                        "Samudragupta",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which Delhi Sultan is associated with market control reforms?",
-                        "Iltutmish",
-                        "Alauddin Khalji",
                         "Firoz Shah Tughlaq",
                         "Sikandar Lodi",
-                        2
+                        "Iltutmish",
+                        "Alauddin Khalji",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Who was the first woman ruler of the Delhi Sultanate?",
-                        "Nur Jahan",
                         "Razia Sultan",
-                        "Rani Durgavati",
+                        "Nur Jahan",
                         "Rani Lakshmibai",
-                        2
+                        "Rani Durgavati",
+                        1
                 ));
 
                 questions.add(new Question(
                         "Which Mughal emperor abolished the jizya in 1564?",
-                        "Akbar",
-                        "Aurangzeb",
-                        "Jahangir",
                         "Humayun",
-                        1
+                        "Akbar",
+                        "Jahangir",
+                        "Aurangzeb",
+                        2
                 ));
 
                 questions.add(new Question(
                         "The Treaty of Purandar was signed in 1665 between Shivaji Maharaj and whom?",
-                        "Shaista Khan",
                         "Jai Singh I",
-                        "Aurangzeb",
                         "Afzal Khan",
-                        2
-                ));
-
-                questions.add(new Question(
-                        "Who started the Home Rule movement in India along with Annie Besant?",
-                        "Bal Gangadhar Tilak",
-                        "Gandhi",
-                        "Nehru",
-                        "Patel",
+                        "Aurangzeb",
+                        "Shaista Khan",
                         1
                 ));
 
                 questions.add(new Question(
+                        "Who started the Home Rule movement in India along with Annie Besant?",
+                        "Gandhi",
+                        "Nehru",
+                        "Patel",
+                        "Bal Gangadhar Tilak",
+                        4
+                ));
+
+                questions.add(new Question(
                         "The Non-Cooperation Movement was launched in which year?",
+                        "1922",
                         "1919",
                         "1920",
-                        "1922",
                         "1930",
-                        2
+                        3
                 ));
 
                 questions.add(new Question(
                         "Who presided over the Lahore session of Congress in 1929?",
-                        "Mahatma Gandhi",
-                        "Jawaharlal Nehru",
                         "Sardar Patel",
                         "Subhas Chandra Bose",
-                        2
+                        "Mahatma Gandhi",
+                        "Jawaharlal Nehru",
+                        4
                 ));
             }
 
             if (level == 4) {
                 questions.add(new Question(
                         "Which inscription provides information about Samudragupta's conquests?",
+                        "Aihole inscription",
+                        "Hathigumpha inscription",
                         "Allahabad Pillar inscription",
                         "Junagadh inscription",
-                        "Hathigumpha inscription",
-                        "Aihole inscription",
-                        1
+                        3
                 ));
 
                 questions.add(new Question(
                         "Who was the ruler of the Chalukyas of Badami known for defeating Harsha?",
                         "Pulakeshin II",
                         "Vikramaditya I",
-                        "Kirtivarman I",
                         "Mangalesha",
+                        "Kirtivarman I",
                         1
                 ));
 
                 questions.add(new Question(
                         "Which Bhakti saint is associated with Varkari tradition?",
-                        "Tukaram",
                         "Kabir",
                         "Surdas",
                         "Mirabai",
-                        1
+                        "Tukaram",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Who founded the Vijayanagara Empire?",
+                        "Devaraya and Harihara",
                         "Harihara and Bukka",
                         "Krishnadevaraya and Bukka",
-                        "Devaraya and Harihara",
                         "Rama Raya and Bukka",
-                        1
+                        2
                 ));
 
                 questions.add(new Question(
@@ -2018,213 +2018,213 @@ public class QuestionBank {
 
                 questions.add(new Question(
                         "Who introduced the Permanent Settlement in Bengal?",
-                        "Lord Cornwallis",
-                        "Lord Wellesley",
                         "Lord Dalhousie",
                         "Lord Curzon",
-                        1
+                        "Lord Cornwallis",
+                        "Lord Wellesley",
+                        3
                 ));
 
                 questions.add(new Question(
                         "The Swadeshi Movement began mainly in response to which event?",
-                        "Partition of Bengal",
                         "Rowlatt Act",
-                        "Jallianwala Bagh",
+                        "Partition of Bengal",
                         "Simon Commission",
-                        1
+                        "Jallianwala Bagh",
+                        2
                 ));
 
                 questions.add(new Question(
                         "Who founded the Forward Bloc?",
-                        "Subhas Chandra Bose",
                         "Jawaharlal Nehru",
                         "Rajendra Prasad",
+                        "Subhas Chandra Bose",
                         "C. R. Das",
-                        1
+                        3
                 ));
 
                 questions.add(new Question(
                         "The Cabinet Mission came to India in which year?",
-                        "1942",
                         "1945",
-                        "1946",
                         "1947",
+                        "1946",
+                        "1942",
                         3
                 ));
 
                 questions.add(new Question(
                         "Who was the first Governor-General of independent India?",
-                        "Lord Mountbatten",
-                        "C. Rajagopalachari",
                         "Warren Hastings",
                         "Rajendra Prasad",
-                        1
+                        "C. Rajagopalachari",
+                        "Lord Mountbatten",
+                        4
                 ));
             }
 
             if (level == 5) {
                 questions.add(new Question(
                         "Which ancient text is attributed to Panini?",
-                        "Ashtadhyayi",
                         "Arthashastra",
-                        "Indica",
+                        "Ashtadhyayi",
                         "Mudrarakshasa",
-                        1
+                        "Indica",
+                        2
                 ));
 
                 questions.add(new Question(
                         "The Hathigumpha inscription is associated with which ruler?",
+                        "Rudradaman",
                         "Kharavela",
                         "Ashoka",
-                        "Rudradaman",
                         "Samudragupta",
-                        1
+                        2
                 ));
 
                 questions.add(new Question(
                         "Which Chola ruler sent naval expeditions to Southeast Asia?",
-                        "Rajendra Chola I",
-                        "Rajaraja I",
                         "Kulottunga I",
+                        "Rajaraja I",
+                        "Rajendra Chola I",
                         "Aditya I",
-                        1
+                        3
                 ));
 
                 questions.add(new Question(
                         "Who was the author of Prithviraj Raso?",
                         "Chand Bardai",
-                        "Kalhana",
-                        "Amir Khusrau",
                         "Bana",
+                        "Amir Khusrau",
+                        "Kalhana",
                         1
                 ));
 
                 questions.add(new Question(
                         "Which Mughal emperor's reign is associated with the translation of Mahabharata into Persian as Razmnama?",
-                        "Akbar",
                         "Jahangir",
-                        "Shah Jahan",
+                        "Akbar",
                         "Aurangzeb",
-                        1
+                        "Shah Jahan",
+                        2
                 ));
 
                 questions.add(new Question(
                         "The Ilbert Bill controversy occurred during the viceroyalty of whom?",
-                        "Lord Ripon",
                         "Lord Lytton",
+                        "Lord Ripon",
                         "Lord Curzon",
                         "Lord Dufferin",
-                        1
+                        2
                 ));
 
                 questions.add(new Question(
                         "Which Congress session declared Purna Swaraj as its goal?",
-                        "Lahore, 1929",
                         "Calcutta, 1906",
                         "Surat, 1907",
                         "Lucknow, 1916",
-                        1
+                        "Lahore, 1929",
+                        4
                 ));
 
                 questions.add(new Question(
                         "The Gandhi-Irwin Pact was signed in which year?",
-                        "1928",
                         "1931",
                         "1935",
+                        "1928",
                         "1942",
-                        2
+                        1
                 ));
 
                 questions.add(new Question(
                         "Which Act introduced provincial autonomy in British India?",
-                        "Government of India Act 1919",
                         "Government of India Act 1935",
                         "Indian Councils Act 1909",
+                        "Government of India Act 1919",
                         "Charter Act 1833",
-                        2
+                        1
                 ));
 
                 questions.add(new Question(
                         "Who led the Indian National Army in its later phase?",
-                        "Subhas Chandra Bose",
                         "Rash Behari Bose",
                         "Bhagat Singh",
                         "Lala Lajpat Rai",
-                        1
+                        "Subhas Chandra Bose",
+                        4
                 ));
             }
 
             if (level == 6) {
                 questions.add(new Question(
                         "Which source is a major account of ancient India by Megasthenes?",
-                        "Indica",
                         "Periplus",
-                        "Arthashastra",
                         "Rajatarangini",
-                        1
+                        "Indica",
+                        "Arthashastra",
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which Gupta ruler adopted the title Vikramaditya?",
-                        "Chandragupta II",
-                        "Samudragupta",
-                        "Kumaragupta",
                         "Skandagupta",
-                        1
+                        "Chandragupta II",
+                        "Kumaragupta",
+                        "Samudragupta",
+                        2
                 ));
 
                 questions.add(new Question(
                         "The Second Battle of Tarain was fought in which year?",
                         "1191",
                         "1192",
-                        "1206",
                         "1210",
+                        "1206",
                         2
                 ));
 
                 questions.add(new Question(
                         "Who established the Ryotwari system in parts of British India?",
-                        "Thomas Munro",
-                        "Cornwallis",
                         "Wellesley",
+                        "Thomas Munro",
                         "Dalhousie",
-                        1
-                ));
-
-                questions.add(new Question(
-                        "Which event immediately preceded the launch of the Quit India Movement?",
-                        "Cripps Mission failure",
-                        "Simon Commission",
-                        "Partition of Bengal",
-                        "Dandi March",
-                        1
-                ));
-
-                questions.add(new Question(
-                        "The August Offer was made by the British government in which year?",
-                        "1939",
-                        "1940",
-                        "1942",
-                        "1945",
+                        "Cornwallis",
                         2
                 ));
 
                 questions.add(new Question(
+                        "Which event immediately preceded the launch of the Quit India Movement?",
+                        "Simon Commission",
+                        "Partition of Bengal",
+                        "Dandi March",
+                        "Cripps Mission failure",
+                        4
+                ));
+
+                questions.add(new Question(
+                        "The August Offer was made by the British government in which year?",
+                        "1942",
+                        "1939",
+                        "1945",
+                        "1940",
+                        4
+                ));
+
+                questions.add(new Question(
                         "Who was the president of the Constituent Assembly?",
-                        "B. R. Ambedkar",
-                        "Rajendra Prasad",
                         "Jawaharlal Nehru",
+                        "Rajendra Prasad",
                         "Sardar Patel",
+                        "B. R. Ambedkar",
                         2
                 ));
 
                 questions.add(new Question(
                         "Which agreement ended the First Anglo-Maratha War?",
+                        "Treaty of Bassein",
                         "Treaty of Salbai",
                         "Treaty of Purandar",
-                        "Treaty of Bassein",
                         "Treaty of Surat",
-                        1
+                        2
                 ));
 
                 questions.add(new Question(
@@ -2238,11 +2238,11 @@ public class QuestionBank {
 
                 questions.add(new Question(
                         "The Poona Pact of 1932 was signed between Mahatma Gandhi and whom?",
+                        "Rajendra Prasad",
                         "B. R. Ambedkar",
                         "Madan Mohan Malaviya",
-                        "Rajendra Prasad",
                         "M. A. Jinnah",
-                        1
+                        2
                 ));
             }
         }
@@ -2253,62 +2253,62 @@ public class QuestionBank {
             if (level == 1) {
                 questions.add(new Question(
                         "How many players are there in a cricket team?",
-                        "9",
-                        "10",
                         "11",
                         "12",
-                        3
+                        "9",
+                        "10",
+                        1
                 ));
 
                 questions.add(new Question(
                         "Which sport uses a shuttlecock?",
                         "Tennis",
-                        "Badminton",
-                        "Hockey",
                         "Squash",
-                        2
+                        "Hockey",
+                        "Badminton",
+                        4
                 ));
 
                 questions.add(new Question(
                         "How many rings are on the Olympic flag?",
-                        "4",
                         "5",
-                        "6",
                         "7",
-                        2
+                        "6",
+                        "4",
+                        1
                 ));
 
                 questions.add(new Question(
                         "Which country is associated with sumo wrestling?",
-                        "China",
                         "Japan",
-                        "Korea",
+                        "China",
                         "Thailand",
-                        2
+                        "Korea",
+                        1
                 ));
 
                 questions.add(new Question(
                         "In football, how many players from one team are normally on the field?",
+                        "12",
+                        "11",
                         "9",
                         "10",
-                        "11",
-                        "12",
-                        3
-                ));
-
-                questions.add(new Question(
-                        "Which sport is played at Wimbledon?",
-                        "Football",
-                        "Tennis",
-                        "Cricket",
-                        "Hockey",
                         2
                 ));
 
                 questions.add(new Question(
+                        "Which sport is played at Wimbledon?",
+                        "Cricket",
+                        "Hockey",
+                        "Tennis",
+                        "Football",
+                        3
+                ));
+
+                questions.add(new Question(
                         "What is the highest score possible with one dart?",
-                        "50",
                         "60",
+                        "50",
                         "100",
                         "180",
                         4
@@ -2316,20 +2316,20 @@ public class QuestionBank {
 
                 questions.add(new Question(
                         "Which sport uses a bat, ball and wickets?",
-                        "Baseball",
                         "Cricket",
                         "Hockey",
+                        "Baseball",
                         "Rugby",
-                        2
+                        1
                 ));
 
                 questions.add(new Question(
                         "How many points is a basketball free throw worth?",
-                        "1",
                         "2",
                         "3",
                         "4",
-                        1
+                        "1",
+                        4
                 ));
 
                 questions.add(new Question(
@@ -2345,112 +2345,112 @@ public class QuestionBank {
             if (level == 2) {
                 questions.add(new Question(
                         "How many Grand Slam tournaments are there in tennis each year?",
+                        "5",
+                        "4",
                         "2",
                         "3",
-                        "4",
-                        "5",
-                        3
+                        2
                 ));
 
                 questions.add(new Question(
                         "Which sport awards the Davis Cup?",
-                        "Tennis",
-                        "Golf",
-                        "Hockey",
                         "Football",
-                        1
+                        "Hockey",
+                        "Golf",
+                        "Tennis",
+                        4
                 ));
 
                 questions.add(new Question(
                         "What is a hat-trick in cricket?",
+                        "Three boundaries",
+                        "Three catches in an innings",
                         "Three wickets in three consecutive balls",
                         "Three runs in one ball",
-                        "Three catches in an innings",
-                        "Three boundaries",
-                        1
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which sport uses the term 'birdie'?",
-                        "Golf",
-                        "Cricket",
                         "Tennis",
+                        "Golf",
                         "Boxing",
-                        1
+                        "Cricket",
+                        2
                 ));
 
                 questions.add(new Question(
                         "How long is an Olympic swimming pool?",
-                        "25 m",
-                        "50 m",
                         "75 m",
                         "100 m",
-                        2
+                        "50 m",
+                        "25 m",
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which country won the first Cricket World Cup in 1975?",
-                        "Australia",
                         "West Indies",
-                        "England",
+                        "Australia",
                         "India",
-                        2
+                        "England",
+                        1
                 ));
 
                 questions.add(new Question(
                         "What is the standard marathon distance?",
-                        "40.195 km",
-                        "41.195 km",
-                        "42.195 km",
                         "43.195 km",
+                        "40.195 km",
+                        "42.195 km",
+                        "41.195 km",
                         3
                 ));
 
                 questions.add(new Question(
                         "Which sport has positions such as scrum-half and fly-half?",
-                        "Rugby",
                         "Football",
-                        "Basketball",
+                        "Rugby",
                         "Volleyball",
-                        1
-                ));
-
-                questions.add(new Question(
-                        "How many players are on court for one volleyball team?",
-                        "5",
-                        "6",
-                        "7",
-                        "8",
+                        "Basketball",
                         2
                 ));
 
                 questions.add(new Question(
-                        "Which sport is associated with the Ryder Cup?",
-                        "Golf",
-                        "Tennis",
-                        "Cricket",
-                        "Boxing",
+                        "How many players are on court for one volleyball team?",
+                        "6",
+                        "5",
+                        "7",
+                        "8",
                         1
+                ));
+
+                questions.add(new Question(
+                        "Which sport is associated with the Ryder Cup?",
+                        "Tennis",
+                        "Boxing",
+                        "Cricket",
+                        "Golf",
+                        4
                 ));
             }
 
             if (level == 3) {
                 questions.add(new Question(
                         "Who is awarded the Ballon d'Or?",
-                        "Best football player",
-                        "Best cricketer",
                         "Best tennis player",
+                        "Best cricketer",
                         "Best swimmer",
-                        1
+                        "Best football player",
+                        4
                 ));
 
                 questions.add(new Question(
                         "In cricket, what does LBW stand for?",
-                        "Leg Before Wicket",
-                        "Long Ball Wicket",
                         "Leg Bat Wicket",
                         "Left Before Wicket",
-                        1
+                        "Leg Before Wicket",
+                        "Long Ball Wicket",
+                        3
                 ));
 
                 questions.add(new Question(
@@ -2464,47 +2464,47 @@ public class QuestionBank {
 
                 questions.add(new Question(
                         "How many points is a touchdown worth in American football before the extra point?",
-                        "3",
                         "6",
-                        "7",
                         "8",
-                        2
+                        "3",
+                        "7",
+                        1
                 ));
 
                 questions.add(new Question(
                         "What is the term for zero in tennis?",
                         "Nil",
-                        "Love",
-                        "Duck",
                         "Blank",
-                        2
+                        "Duck",
+                        "Love",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which sport features the pommel horse?",
-                        "Gymnastics",
-                        "Equestrian",
                         "Wrestling",
                         "Cycling",
-                        1
+                        "Gymnastics",
+                        "Equestrian",
+                        3
                 ));
 
                 questions.add(new Question(
                         "The Ashes is contested between England and which country?",
-                        "India",
-                        "Australia",
-                        "South Africa",
                         "New Zealand",
+                        "Australia",
+                        "India",
+                        "South Africa",
                         2
                 ));
 
                 questions.add(new Question(
                         "Which sport uses a puck?",
-                        "Ice hockey",
-                        "Field hockey",
                         "Lacrosse",
+                        "Ice hockey",
                         "Curling",
-                        1
+                        "Field hockey",
+                        2
                 ));
 
                 questions.add(new Question(
@@ -2518,11 +2518,11 @@ public class QuestionBank {
 
                 questions.add(new Question(
                         "Which country has won the most men's FIFA World Cups?",
-                        "Germany",
-                        "Argentina",
                         "Brazil",
+                        "Argentina",
+                        "Germany",
                         "Italy",
-                        3
+                        1
                 ));
             }
 
@@ -2531,274 +2531,274 @@ public class QuestionBank {
                         "In cricket, how many legal balls are there in a standard over?",
                         "5",
                         "6",
-                        "7",
                         "8",
+                        "7",
                         2
                 ));
 
                 questions.add(new Question(
                         "Which tennis Grand Slam is played on clay?",
+                        "Australian Open",
+                        "French Open",
                         "Wimbledon",
                         "US Open",
-                        "French Open",
-                        "Australian Open",
-                        3
+                        2
                 ));
 
                 questions.add(new Question(
                         "What is the maximum break in snooker?",
-                        "147",
                         "155",
-                        "180",
                         "200",
-                        1
+                        "180",
+                        "147",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which country hosted the 2016 Summer Olympics?",
-                        "Brazil",
-                        "China",
                         "UK",
+                        "Brazil",
                         "Japan",
-                        1
+                        "China",
+                        2
                 ));
 
                 questions.add(new Question(
                         "In Formula 1, what does pole position mean?",
-                        "Fastest qualifying position at the front",
-                        "Last position",
                         "Pit-lane position",
                         "Championship lead",
-                        1
+                        "Last position",
+                        "Fastest qualifying position at the front",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which sport has the Stanley Cup?",
+                        "Basketball",
                         "Ice hockey",
                         "Baseball",
-                        "Basketball",
                         "Football",
-                        1
+                        2
                 ));
 
                 questions.add(new Question(
                         "How many gold medals are awarded for an individual Olympic event?",
-                        "1",
                         "2",
+                        "1",
                         "3",
                         "4",
-                        1
+                        2
                 ));
 
                 questions.add(new Question(
                         "Which Indian sportsperson is associated with the term 'Flying Sikh'?",
-                        "Milkha Singh",
-                        "Dhyan Chand",
-                        "Abhinav Bindra",
                         "P. T. Usha",
-                        1
+                        "Abhinav Bindra",
+                        "Dhyan Chand",
+                        "Milkha Singh",
+                        4
                 ));
 
                 questions.add(new Question(
                         "In chess, which piece can move in an L-shape?",
-                        "Bishop",
-                        "Knight",
                         "Rook",
+                        "Knight",
+                        "Bishop",
                         "Queen",
                         2
                 ));
 
                 questions.add(new Question(
                         "Which country originated modern table tennis?",
-                        "England",
                         "China",
                         "Japan",
                         "USA",
-                        1
+                        "England",
+                        4
                 ));
             }
 
             if (level == 5) {
                 questions.add(new Question(
                         "What is the Duckworth-Lewis-Stern method used for?",
-                        "Setting targets in rain-affected limited-overs cricket",
-                        "Ranking tennis players",
-                        "Timing races",
                         "Scoring gymnastics",
-                        1
+                        "Setting targets in rain-affected limited-overs cricket",
+                        "Timing races",
+                        "Ranking tennis players",
+                        2
                 ));
 
                 questions.add(new Question(
                         "In chess, what is stalemate?",
-                        "A draw where the player to move has no legal move and is not in check",
                         "Checkmate",
+                        "A draw where the player to move has no legal move and is not in check",
                         "A winning move",
                         "A repeated opening",
-                        1
+                        2
                 ));
 
                 questions.add(new Question(
                         "Which cycling race is one of the three Grand Tours?",
+                        "Six Nations",
+                        "Davis Cup",
                         "Tour de France",
                         "Paris Masters",
-                        "Davis Cup",
-                        "Six Nations",
-                        1
+                        3
                 ));
 
                 questions.add(new Question(
                         "What is the standard height of a basketball hoop?",
-                        "2.75 m",
-                        "3.05 m",
                         "3.25 m",
                         "3.50 m",
-                        2
+                        "2.75 m",
+                        "3.05 m",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which athlete won India's first individual Olympic gold medal?",
-                        "Neeraj Chopra",
-                        "Abhinav Bindra",
                         "Sushil Kumar",
                         "Rajyavardhan Rathore",
-                        2
+                        "Neeraj Chopra",
+                        "Abhinav Bindra",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which sport uses the term 'ippon'?",
-                        "Judo",
+                        "Archery",
                         "Boxing",
                         "Fencing",
-                        "Archery",
-                        1
+                        "Judo",
+                        4
                 ));
 
                 questions.add(new Question(
                         "What is the maximum score in a single frame of ten-pin bowling?",
-                        "20",
-                        "30",
-                        "40",
                         "50",
+                        "30",
+                        "20",
+                        "40",
                         2
                 ));
 
                 questions.add(new Question(
                         "Which event combines swimming, cycling and running?",
-                        "Triathlon",
+                        "Heptathlon",
                         "Decathlon",
                         "Pentathlon",
-                        "Heptathlon",
-                        1
+                        "Triathlon",
+                        4
                 ));
 
                 questions.add(new Question(
                         "In baseball, how many strikes usually result in a strikeout?",
                         "2",
+                        "5",
                         "3",
                         "4",
-                        "5",
-                        2
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which country is famous for the All Blacks rugby team?",
                         "Australia",
+                        "England",
                         "New Zealand",
                         "South Africa",
-                        "England",
-                        2
+                        3
                 ));
             }
 
             if (level == 6) {
                 questions.add(new Question(
                         "In cricket, what is a 'googly'?",
+                        "A batting shot",
+                        "A fielding position",
                         "A deceptive delivery by a leg-spinner",
                         "A type of bat",
-                        "A fielding position",
-                        "A batting shot",
-                        1
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which Formula 1 flag indicates the race has been stopped?",
-                        "Yellow",
                         "Red",
                         "Blue",
+                        "Yellow",
                         "Green",
-                        2
+                        1
                 ));
 
                 questions.add(new Question(
                         "In tennis, what is a 'break point'?",
+                        "A service fault",
+                        "The first point",
                         "A point that could win the receiving player the game",
                         "A point after a tie-break",
-                        "The first point",
-                        "A service fault",
-                        1
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which Olympic event includes the disciplines 100m, long jump, shot put and high jump?",
                         "Decathlon",
-                        "Pentathlon",
                         "Heptathlon",
+                        "Pentathlon",
                         "Triathlon",
                         1
                 ));
 
                 questions.add(new Question(
                         "What is the term for three consecutive strikes in bowling?",
-                        "Turkey",
-                        "Eagle",
                         "Hat-trick",
+                        "Eagle",
+                        "Turkey",
                         "Triple",
-                        1
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which country has hosted the Summer Olympics most often as of the modern era?",
+                        "Japan",
                         "USA",
                         "France",
                         "UK",
-                        "Japan",
-                        1
+                        2
                 ));
 
                 questions.add(new Question(
                         "In volleyball, what is a libero primarily known for?",
-                        "Defensive specialist",
-                        "Server only",
                         "Attacker only",
                         "Referee",
-                        1
+                        "Defensive specialist",
+                        "Server only",
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which boxing weight class is above lightweight and below welterweight?",
-                        "Featherweight",
-                        "Light welterweight",
                         "Middleweight",
+                        "Light welterweight",
+                        "Featherweight",
                         "Heavyweight",
                         2
                 ));
 
                 questions.add(new Question(
                         "What is the name of the trophy awarded to the winner of the ICC Men's Cricket World Cup?",
+                        "Bledisloe Cup",
                         "Webb Ellis Cup",
                         "Cricket World Cup Trophy",
                         "Davis Cup",
-                        "Bledisloe Cup",
-                        2
+                        3
                 ));
 
                 questions.add(new Question(
                         "In athletics, what is the steeplechase?",
-                        "Distance race with barriers and water jump",
-                        "Short sprint",
                         "Long jump event",
+                        "Distance race with barriers and water jump",
                         "Walking event",
-                        1
+                        "Short sprint",
+                        2
                 ));
             }
         }
@@ -2809,91 +2809,91 @@ public class QuestionBank {
             if (level == 1) {
                 questions.add(new Question(
                         "Who is known as the Father of the Indian Constitution?",
-                        "Mahatma Gandhi",
-                        "B. R. Ambedkar",
-                        "Jawaharlal Nehru",
                         "Sardar Patel",
+                        "B. R. Ambedkar",
+                        "Mahatma Gandhi",
+                        "Jawaharlal Nehru",
                         2
                 ));
 
                 questions.add(new Question(
                         "The Constitution of India came into effect on:",
-                        "15 August 1947",
+                        "2 October 1950",
                         "26 January 1950",
                         "26 November 1949",
-                        "2 October 1950",
+                        "15 August 1947",
                         2
                 ));
 
                 questions.add(new Question(
                         "Who was the first President of India?",
-                        "Dr. Rajendra Prasad",
                         "Jawaharlal Nehru",
                         "S. Radhakrishnan",
+                        "Dr. Rajendra Prasad",
                         "Sardar Patel",
-                        1
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which body is known as the guardian of the Constitution?",
                         "Parliament",
                         "Supreme Court",
-                        "President",
                         "Election Commission",
+                        "President",
                         2
                 ));
 
                 questions.add(new Question(
                         "Who appoints the Prime Minister of India?",
-                        "Chief Justice",
-                        "President",
                         "Lok Sabha Speaker",
+                        "Chief Justice",
                         "Vice President",
-                        2
+                        "President",
+                        4
                 ));
 
                 questions.add(new Question(
                         "How many Fundamental Rights are currently guaranteed?",
                         "5",
-                        "6",
                         "7",
+                        "6",
                         "8",
-                        2
+                        3
                 ));
 
                 questions.add(new Question(
                         "The Indian Constitution was adopted on:",
-                        "15 August 1947",
                         "26 January 1950",
                         "26 November 1949",
                         "2 October 1949",
-                        3
-                ));
-
-                questions.add(new Question(
-                        "Which house is called the House of the People?",
-                        "Rajya Sabha",
-                        "Lok Sabha",
-                        "Vidhan Sabha",
-                        "Vidhan Parishad",
+                        "15 August 1947",
                         2
                 ));
 
                 questions.add(new Question(
+                        "Which house is called the House of the People?",
+                        "Lok Sabha",
+                        "Vidhan Parishad",
+                        "Vidhan Sabha",
+                        "Rajya Sabha",
+                        1
+                ));
+
+                questions.add(new Question(
                         "What is the minimum age to become President of India?",
-                        "25 years",
-                        "30 years",
                         "35 years",
                         "40 years",
-                        3
+                        "30 years",
+                        "25 years",
+                        1
                 ));
 
                 questions.add(new Question(
                         "Who is the constitutional head of India?",
-                        "Prime Minister",
-                        "President",
                         "Chief Justice",
+                        "President",
                         "Home Minister",
+                        "Prime Minister",
                         2
                 ));
             }
@@ -2901,92 +2901,92 @@ public class QuestionBank {
             if (level == 2) {
                 questions.add(new Question(
                         "Which Article deals with equality before law?",
-                        "Article 12",
-                        "Article 14",
                         "Article 16",
+                        "Article 12",
                         "Article 21",
-                        2
+                        "Article 14",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which Article protects life and personal liberty?",
                         "Article 14",
+                        "Article 32",
                         "Article 19",
                         "Article 21",
-                        "Article 32",
-                        3
+                        4
                 ));
 
                 questions.add(new Question(
                         "Who was Chairman of the Drafting Committee?",
-                        "Jawaharlal Nehru",
                         "B. R. Ambedkar",
-                        "Rajendra Prasad",
                         "Sardar Patel",
-                        2
-                ));
-
-                questions.add(new Question(
-                        "Directive Principles were inspired by the Constitution of:",
-                        "USA",
-                        "Ireland",
-                        "Canada",
-                        "Australia",
-                        2
-                ));
-
-                questions.add(new Question(
-                        "Fundamental Duties were added by which amendment?",
-                        "42nd",
-                        "44th",
-                        "73rd",
-                        "86th",
+                        "Rajendra Prasad",
+                        "Jawaharlal Nehru",
                         1
                 ));
 
                 questions.add(new Question(
+                        "Directive Principles were inspired by the Constitution of:",
+                        "Ireland",
+                        "Australia",
+                        "Canada",
+                        "USA",
+                        1
+                ));
+
+                questions.add(new Question(
+                        "Fundamental Duties were added by which amendment?",
+                        "73rd",
+                        "86th",
+                        "44th",
+                        "42nd",
+                        4
+                ));
+
+                questions.add(new Question(
                         "Rajya Sabha is a:",
-                        "Temporary House",
-                        "Permanent House",
-                        "State House",
                         "Judicial House",
+                        "Permanent House",
+                        "Temporary House",
+                        "State House",
                         2
                 ));
 
                 questions.add(new Question(
                         "Who presides over the Lok Sabha?",
-                        "President",
                         "Vice President",
-                        "Speaker",
+                        "President",
                         "Prime Minister",
-                        3
+                        "Speaker",
+                        4
                 ));
 
                 questions.add(new Question(
                         "The Supreme Court is located in:",
-                        "Mumbai",
-                        "New Delhi",
                         "Kolkata",
+                        "New Delhi",
+                        "Mumbai",
                         "Chennai",
                         2
                 ));
 
                 questions.add(new Question(
                         "Which amendment lowered voting age from 21 to 18?",
-                        "42nd",
-                        "44th",
                         "61st",
+                        "42nd",
                         "73rd",
-                        3
+                        "44th",
+                        1
                 ));
 
                 questions.add(new Question(
                         "Which Article is associated with constitutional remedies?",
                         "Article 14",
+                        "Article 32",
                         "Article 19",
                         "Article 21",
-                        "Article 32",
-                        4
+                        2
                 ));
             }
 
@@ -2994,54 +2994,54 @@ public class QuestionBank {
                 questions.add(new Question(
                         "Which schedule contains provisions relating to anti-defection?",
                         "Eighth",
-                        "Tenth",
                         "Eleventh",
                         "Twelfth",
-                        2
+                        "Tenth",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which constitutional amendment gave constitutional status to Panchayats?",
+                        "74th",
                         "42nd",
                         "61st",
                         "73rd",
-                        "74th",
-                        3
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which constitutional amendment gave constitutional status to municipalities?",
-                        "73rd",
+                        "91st",
                         "74th",
                         "86th",
-                        "91st",
+                        "73rd",
                         2
                 ));
 
                 questions.add(new Question(
                         "Who is the ex-officio Chairman of Rajya Sabha?",
-                        "President",
                         "Vice President",
-                        "Prime Minister",
                         "Speaker",
-                        2
+                        "President",
+                        "Prime Minister",
+                        1
                 ));
 
                 questions.add(new Question(
                         "A Money Bill can be introduced only in:",
                         "Rajya Sabha",
+                        "State Assembly only",
                         "Lok Sabha",
                         "Either House",
-                        "State Assembly only",
-                        2
+                        3
                 ));
 
                 questions.add(new Question(
                         "Who decides whether a bill is a Money Bill?",
-                        "President",
                         "Prime Minister",
-                        "Lok Sabha Speaker",
                         "Finance Minister",
+                        "Lok Sabha Speaker",
+                        "President",
                         3
                 ));
 
@@ -3049,220 +3049,220 @@ public class QuestionBank {
                         "Which Article deals with amendment of the Constitution?",
                         "Article 32",
                         "Article 356",
-                        "Article 368",
                         "Article 370",
-                        3
+                        "Article 368",
+                        4
                 ));
 
                 questions.add(new Question(
                         "The President of India is elected by:",
+                        "Only state legislatures",
                         "Direct vote of citizens",
                         "Elected MPs and elected MLAs",
                         "Only Parliament",
-                        "Only state legislatures",
-                        2
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which body recommends distribution of tax revenues between Union and States?",
+                        "NITI Aayog",
+                        "UPSC",
                         "Finance Commission",
                         "Election Commission",
-                        "UPSC",
-                        "NITI Aayog",
-                        1
+                        3
                 ));
 
                 questions.add(new Question(
                         "The Comptroller and Auditor General is appointed by:",
-                        "Prime Minister",
-                        "President",
                         "Parliament",
                         "Chief Justice",
-                        2
+                        "Prime Minister",
+                        "President",
+                        4
                 ));
             }
 
             if (level == 4) {
                 questions.add(new Question(
                         "Which writ is used to produce a person alleged to be unlawfully detained?",
-                        "Mandamus",
                         "Habeas Corpus",
+                        "Mandamus",
                         "Certiorari",
                         "Quo Warranto",
-                        2
+                        1
                 ));
 
                 questions.add(new Question(
                         "Which writ commands a public authority to perform a legal duty?",
-                        "Habeas Corpus",
                         "Mandamus",
                         "Prohibition",
                         "Quo Warranto",
-                        2
+                        "Habeas Corpus",
+                        1
                 ));
 
                 questions.add(new Question(
                         "Which Article provides for President's Rule in a state?",
+                        "360",
                         "352",
                         "356",
-                        "360",
                         "365",
-                        2
+                        3
                 ));
 
                 questions.add(new Question(
                         "National Emergency can be proclaimed on grounds including:",
                         "War, external aggression or armed rebellion",
-                        "Financial crisis only",
                         "Elections only",
                         "Natural disasters only",
+                        "Financial crisis only",
                         1
                 ));
 
                 questions.add(new Question(
                         "The basic structure doctrine was established in which case?",
-                        "Golaknath case",
-                        "Kesavananda Bharati case",
                         "Minerva Mills case",
                         "Maneka Gandhi case",
-                        2
+                        "Kesavananda Bharati case",
+                        "Golaknath case",
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which institution is the final interpreter of the Constitution?",
+                        "President",
+                        "Election Commission",
                         "Parliament",
                         "Supreme Court",
-                        "Election Commission",
-                        "President",
-                        2
+                        4
                 ));
 
                 questions.add(new Question(
                         "The Attorney General of India is appointed by:",
                         "President",
+                        "Parliament",
                         "Prime Minister",
                         "Chief Justice",
-                        "Parliament",
                         1
                 ));
 
                 questions.add(new Question(
                         "Which Article deals with equality of opportunity in public employment?",
-                        "Article 14",
-                        "Article 15",
-                        "Article 16",
                         "Article 17",
-                        3
+                        "Article 16",
+                        "Article 15",
+                        "Article 14",
+                        2
                 ));
 
                 questions.add(new Question(
                         "Which part of the Constitution contains Fundamental Duties?",
                         "Part III",
-                        "Part IVA",
                         "Part IV",
+                        "Part IVA",
                         "Part V",
-                        2
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which body conducts elections to Parliament and state legislatures?",
-                        "UPSC",
-                        "Election Commission of India",
-                        "Finance Commission",
                         "CAG",
-                        2
+                        "UPSC",
+                        "Finance Commission",
+                        "Election Commission of India",
+                        4
                 ));
             }
 
             if (level == 5) {
                 questions.add(new Question(
                         "Which principle limits Parliament's amending power?",
-                        "Doctrine of pleasure",
                         "Basic structure doctrine",
-                        "Collective responsibility",
                         "Separation of religion",
-                        2
-                ));
-
-                questions.add(new Question(
-                        "Which case expanded the interpretation of Article 21 significantly?",
-                        "Maneka Gandhi case",
-                        "Shah Bano case",
-                        "Berubari case",
-                        "S. R. Bommai case",
+                        "Doctrine of pleasure",
+                        "Collective responsibility",
                         1
                 ));
 
                 questions.add(new Question(
+                        "Which case expanded the interpretation of Article 21 significantly?",
+                        "Shah Bano case",
+                        "Berubari case",
+                        "S. R. Bommai case",
+                        "Maneka Gandhi case",
+                        4
+                ));
+
+                questions.add(new Question(
                         "Which schedule deals with allocation of seats in Rajya Sabha?",
-                        "Third",
                         "Fourth",
-                        "Fifth",
                         "Sixth",
-                        2
+                        "Third",
+                        "Fifth",
+                        1
                 ));
 
                 questions.add(new Question(
                         "Which schedule contains forms of oaths and affirmations?",
+                        "Fourth",
                         "Second",
                         "Third",
-                        "Fourth",
                         "Fifth",
-                        2
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which schedule deals with tribal areas in Assam, Meghalaya, Tripura and Mizoram?",
                         "Fifth",
+                        "Ninth",
                         "Sixth",
                         "Seventh",
-                        "Ninth",
-                        2
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which list contains subjects on which only Parliament normally legislates?",
+                        "Residuary List",
                         "State List",
                         "Union List",
                         "Concurrent List",
-                        "Residuary List",
-                        2
+                        3
                 ));
 
                 questions.add(new Question(
                         "Residuary legislative powers in India belong to:",
-                        "States",
-                        "Union Parliament",
                         "President alone",
                         "Supreme Court",
-                        2
+                        "Union Parliament",
+                        "States",
+                        3
                 ));
 
                 questions.add(new Question(
                         "The Inter-State Council is provided under which Article?",
-                        "263",
-                        "280",
                         "324",
+                        "280",
                         "356",
-                        1
+                        "263",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which body replaced the Planning Commission?",
                         "Finance Commission",
                         "NITI Aayog",
-                        "GST Council",
                         "CAG",
+                        "GST Council",
                         2
                 ));
 
                 questions.add(new Question(
                         "The GST Council is established under which Article?",
-                        "279A",
-                        "280",
                         "301",
                         "312",
-                        1
+                        "279A",
+                        "280",
+                        3
                 ));
             }
 
@@ -3270,91 +3270,91 @@ public class QuestionBank {
                 questions.add(new Question(
                         "Which constitutional provision enables Parliament to legislate on a State List subject in national interest when Rajya Sabha passes a resolution?",
                         "Article 249",
+                        "Article 253",
                         "Article 250",
                         "Article 252",
-                        "Article 253",
                         1
                 ));
 
                 questions.add(new Question(
                         "Under Article 312, Parliament can create:",
                         "All-India Services",
-                        "Municipal bodies",
-                        "Election tribunals only",
                         "State legislatures",
+                        "Election tribunals only",
+                        "Municipal bodies",
                         1
                 ));
 
                 questions.add(new Question(
                         "Which case is closely associated with the federal character of the Constitution and President's Rule?",
-                        "S. R. Bommai case",
                         "Kesavananda Bharati case",
+                        "S. R. Bommai case",
                         "Golaknath case",
                         "ADM Jabalpur case",
-                        1
+                        2
                 ));
 
                 questions.add(new Question(
                         "Which Article empowers the Supreme Court to issue writs for Fundamental Rights?",
-                        "32",
-                        "136",
                         "226",
+                        "136",
                         "143",
-                        1
+                        "32",
+                        4
                 ));
 
                 questions.add(new Question(
                         "High Courts can issue writs under which Article?",
                         "32",
                         "136",
-                        "226",
                         "280",
-                        3
+                        "226",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which amendment inserted the words Socialist, Secular and Integrity into the Preamble?",
-                        "24th",
                         "42nd",
+                        "24th",
                         "44th",
                         "52nd",
-                        2
+                        1
                 ));
 
                 questions.add(new Question(
                         "Which amendment introduced the anti-defection provisions?",
-                        "42nd",
-                        "44th",
                         "52nd",
+                        "44th",
                         "61st",
-                        3
+                        "42nd",
+                        1
                 ));
 
                 questions.add(new Question(
                         "Which amendment lowered the voting age to 18?",
-                        "42nd",
                         "44th",
                         "61st",
                         "73rd",
-                        3
+                        "42nd",
+                        2
                 ));
 
                 questions.add(new Question(
                         "Which constitutional authority audits Union and State government accounts?",
-                        "CAG",
-                        "Finance Commission",
-                        "UPSC",
                         "Election Commission",
-                        1
+                        "UPSC",
+                        "Finance Commission",
+                        "CAG",
+                        4
                 ));
 
                 questions.add(new Question(
                         "The doctrine of parliamentary sovereignty in India is limited primarily by:",
-                        "Judicial review and the Constitution",
                         "Governor's powers",
                         "Local governments",
+                        "Judicial review and the Constitution",
                         "Customary law alone",
-                        1
+                        3
                 ));
             }
         }
@@ -3365,92 +3365,92 @@ public class QuestionBank {
             if (level == 1) {
                 questions.add(new Question(
                         "What is the capital of Maharashtra?",
-                        "Mumbai",
-                        "Pune",
-                        "Nagpur",
                         "Nashik",
-                        1
+                        "Pune",
+                        "Mumbai",
+                        "Nagpur",
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which city is known as the cultural capital of Maharashtra?",
                         "Mumbai",
+                        "Kolhapur",
                         "Pune",
                         "Nagpur",
-                        "Kolhapur",
-                        2
+                        3
                 ));
 
                 questions.add(new Question(
                         "Who founded the Maratha Empire?",
-                        "Chhatrapati Shivaji Maharaj",
+                        "Balaji Vishwanath",
                         "Sambhaji Maharaj",
                         "Bajirao I",
-                        "Balaji Vishwanath",
-                        1
+                        "Chhatrapati Shivaji Maharaj",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which sea lies to the west of Maharashtra?",
-                        "Arabian Sea",
-                        "Bay of Bengal",
                         "Indian Ocean",
+                        "Bay of Bengal",
                         "Red Sea",
-                        1
+                        "Arabian Sea",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which is the highest peak in Maharashtra?",
+                        "Rajgad",
+                        "Torna",
                         "Kalsubai",
                         "Mahabaleshwar",
-                        "Torna",
-                        "Rajgad",
-                        1
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which river is one of the major rivers of Maharashtra and flows eastward?",
                         "Godavari",
+                        "Sutlej",
                         "Sabarmati",
                         "Yamuna",
-                        "Sutlej",
                         1
                 ));
 
                 questions.add(new Question(
                         "Which city is famous for Deekshabhoomi?",
+                        "Mumbai",
                         "Nagpur",
                         "Pune",
-                        "Mumbai",
                         "Nashik",
-                        1
+                        2
                 ));
 
                 questions.add(new Question(
                         "Which festival is widely celebrated in Maharashtra?",
-                        "Ganesh Chaturthi",
                         "Onam",
+                        "Ganesh Chaturthi",
                         "Bihu",
                         "Pongal",
-                        1
+                        2
                 ));
 
                 questions.add(new Question(
                         "Which fort was the capital of Chhatrapati Shivaji Maharaj's kingdom?",
+                        "Golconda",
+                        "Agra Fort",
                         "Raigad",
                         "Red Fort",
-                        "Agra Fort",
-                        "Golconda",
-                        1
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which language is primarily spoken in Maharashtra?",
-                        "Hindi",
-                        "Gujarati",
                         "Marathi",
                         "Kannada",
-                        3
+                        "Gujarati",
+                        "Hindi",
+                        1
                 ));
             }
 
@@ -3466,27 +3466,27 @@ public class QuestionBank {
 
                 questions.add(new Question(
                         "Which city is known for the Aga Khan Palace?",
+                        "Satara",
                         "Pune",
                         "Nagpur",
                         "Nashik",
-                        "Satara",
-                        1
+                        2
                 ));
 
                 questions.add(new Question(
                         "Which fort is located near Pune and is associated with Shivaji Maharaj?",
-                        "Torna",
                         "Red Fort",
-                        "Chittorgarh",
+                        "Torna",
                         "Golconda",
-                        1
+                        "Chittorgarh",
+                        2
                 ));
 
                 questions.add(new Question(
                         "Which hill station is known as the Queen of the Sahyadri?",
                         "Mahabaleshwar",
-                        "Lonavala",
                         "Matheran",
+                        "Lonavala",
                         "Panchgani",
                         1
                 ));
@@ -3494,55 +3494,55 @@ public class QuestionBank {
                 questions.add(new Question(
                         "Which district is famous for the Ellora Caves?",
                         "Aurangabad/Chhatrapati Sambhajinagar",
-                        "Pune",
-                        "Nashik",
                         "Kolhapur",
+                        "Nashik",
+                        "Pune",
                         1
                 ));
 
                 questions.add(new Question(
                         "Which UNESCO World Heritage site is near Mumbai?",
-                        "Ajanta Caves",
                         "Elephanta Caves",
-                        "Sanchi",
+                        "Ajanta Caves",
                         "Hampi",
-                        2
+                        "Sanchi",
+                        1
                 ));
 
                 questions.add(new Question(
                         "Which city is associated with the Kumbh Mela in Maharashtra?",
                         "Nashik",
-                        "Pune",
                         "Kolhapur",
                         "Solapur",
+                        "Pune",
                         1
                 ));
 
                 questions.add(new Question(
                         "Which river is a major tributary of the Krishna in Maharashtra?",
-                        "Bhima",
                         "Ganga",
-                        "Yamuna",
                         "Chambal",
-                        1
+                        "Yamuna",
+                        "Bhima",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which crop is strongly associated with the black soil regions of Maharashtra?",
+                        "Rubber",
+                        "Jute",
                         "Cotton",
                         "Tea",
-                        "Jute",
-                        "Rubber",
-                        1
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which city is a major center of Maharashtra's sugar industry?",
-                        "Kolhapur",
                         "Mumbai",
-                        "Nashik",
+                        "Kolhapur",
                         "Nagpur",
-                        1
+                        "Nashik",
+                        2
                 ));
             }
 
@@ -3551,127 +3551,127 @@ public class QuestionBank {
                         "Who was the spiritual guide traditionally associated with Chhatrapati Shivaji Maharaj?",
                         "Samarth Ramdas",
                         "Sant Tukaram",
-                        "Dnyaneshwar",
                         "Namdev",
+                        "Dnyaneshwar",
                         1
                 ));
 
                 questions.add(new Question(
                         "Who wrote the Dnyaneshwari?",
-                        "Sant Dnyaneshwar",
                         "Sant Tukaram",
-                        "Eknath",
                         "Namdev",
-                        1
+                        "Eknath",
+                        "Sant Dnyaneshwar",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Who wrote the famous Marathi devotional work 'Abhangas'?",
                         "Sant Tukaram",
-                        "Kalidasa",
                         "Banabhatta",
+                        "Kalidasa",
                         "Bhasa",
                         1
                 ));
 
                 questions.add(new Question(
                         "Which social reformer founded Satyashodhak Samaj?",
-                        "Jyotirao Phule",
+                        "V. D. Savarkar",
                         "M. G. Ranade",
                         "Gopal Hari Deshmukh",
-                        "V. D. Savarkar",
-                        1
+                        "Jyotirao Phule",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Satyashodhak Samaj was founded in which year?",
-                        "1873",
-                        "1885",
-                        "1905",
                         "1920",
-                        1
+                        "1885",
+                        "1873",
+                        "1905",
+                        3
                 ));
 
                 questions.add(new Question(
                         "Who founded the Prarthana Samaj along with others in Bombay Presidency context?",
-                        "Atmaram Pandurang",
                         "Jyotirao Phule",
+                        "Atmaram Pandurang",
                         "Tilak",
                         "Savarkar",
-                        1
+                        2
                 ));
 
                 questions.add(new Question(
                         "Which newspaper was started by Bal Gangadhar Tilak?",
-                        "Kesari",
-                        "Harijan",
-                        "Young India",
                         "The Hindu",
-                        1
+                        "Young India",
+                        "Harijan",
+                        "Kesari",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Who is associated with the reform movement against social injustice in Maharashtra and women's education?",
-                        "Savitribai Phule",
-                        "Rani Lakshmibai",
                         "Sarojini Naidu",
                         "Annie Besant",
-                        1
+                        "Savitribai Phule",
+                        "Rani Lakshmibai",
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which fort is associated with the coronation of Shivaji Maharaj?",
+                        "Shivneri",
                         "Raigad",
                         "Sinhagad",
                         "Pratapgad",
-                        "Shivneri",
-                        1
+                        2
                 ));
 
                 questions.add(new Question(
                         "Which battle involved Shivaji Maharaj and Afzal Khan?",
-                        "Battle of Pratapgad",
+                        "Battle of Buxar",
                         "Battle of Panipat",
                         "Battle of Plassey",
-                        "Battle of Buxar",
-                        1
+                        "Battle of Pratapgad",
+                        4
                 ));
             }
 
             if (level == 4) {
                 questions.add(new Question(
                         "Which treaty followed the conflict between Shivaji Maharaj and Jai Singh I in 1665?",
-                        "Treaty of Purandar",
                         "Treaty of Salbai",
-                        "Treaty of Bassein",
                         "Treaty of Surat",
-                        1
+                        "Treaty of Purandar",
+                        "Treaty of Bassein",
+                        3
                 ));
 
                 questions.add(new Question(
                         "Who was the first Peshwa under Chhatrapati Shahu Maharaj?",
-                        "Balaji Vishwanath",
-                        "Bajirao I",
-                        "Madhavrao I",
                         "Nana Fadnavis",
-                        1
+                        "Madhavrao I",
+                        "Bajirao I",
+                        "Balaji Vishwanath",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which Peshwa is famous for rapid northern expansion of the Maratha power?",
-                        "Bajirao I",
+                        "Madhavrao II",
                         "Balaji Vishwanath",
                         "Raghunathrao",
-                        "Madhavrao II",
-                        1
+                        "Bajirao I",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Which social reformer wrote 'Gulamgiri'?",
                         "Jyotirao Phule",
                         "Gopal Ganesh Agarkar",
-                        "Tilak",
                         "Ranade",
+                        "Tilak",
                         1
                 ));
 
@@ -3686,47 +3686,47 @@ public class QuestionBank {
 
                 questions.add(new Question(
                         "Which city was the headquarters of the Prarthana Samaj movement in its early period?",
-                        "Bombay",
                         "Nagpur",
-                        "Nashik",
+                        "Bombay",
                         "Satara",
-                        1
+                        "Nashik",
+                        2
                 ));
 
                 questions.add(new Question(
                         "Who was known as Lokmanya?",
                         "Bal Gangadhar Tilak",
-                        "Gopal Krishna Gokhale",
-                        "V. D. Savarkar",
                         "Jyotirao Phule",
+                        "V. D. Savarkar",
+                        "Gopal Krishna Gokhale",
                         1
                 ));
 
                 questions.add(new Question(
                         "Which movement is strongly associated with the Ganapati festival as a public nationalist event?",
-                        "Tilak's nationalist movement",
                         "Quit India Movement",
                         "Home Rule only",
                         "Khilafat only",
-                        1
+                        "Tilak's nationalist movement",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Who founded the Rashtriya Swayamsevak Sangh in Nagpur in 1925?",
-                        "K. B. Hedgewar",
                         "V. D. Savarkar",
                         "Tilak",
+                        "K. B. Hedgewar",
                         "Gokhale",
-                        1
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which reformer worked prominently for widow remarriage and women's education in Maharashtra?",
+                        "Nana Fadnavis",
                         "D. K. Karve",
                         "Afzal Khan",
-                        "Nana Fadnavis",
                         "Bajirao I",
-                        1
+                        2
                 ));
             }
 
@@ -3734,156 +3734,156 @@ public class QuestionBank {
                 questions.add(new Question(
                         "Which agreement in 1775 is associated with the First Anglo-Maratha War?",
                         "Treaty of Surat",
+                        "Treaty of Bassein",
                         "Treaty of Salbai",
                         "Treaty of Purandar",
-                        "Treaty of Bassein",
                         1
                 ));
 
                 questions.add(new Question(
                         "The Treaty of Salbai was signed in which year?",
-                        "1761",
-                        "1782",
                         "1802",
                         "1818",
-                        2
+                        "1782",
+                        "1761",
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which treaty of 1802 greatly affected Maratha politics and led to British intervention?",
                         "Treaty of Bassein",
-                        "Treaty of Salbai",
-                        "Treaty of Purandar",
                         "Treaty of Surat",
+                        "Treaty of Purandar",
+                        "Treaty of Salbai",
                         1
                 ));
 
                 questions.add(new Question(
                         "Who was Nana Fadnavis?",
-                        "A prominent Maratha statesman",
-                        "A Mughal emperor",
-                        "A British governor",
                         "A social reformer of Bengal",
-                        1
+                        "A Mughal emperor",
+                        "A prominent Maratha statesman",
+                        "A British governor",
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which Maratha ruler was associated with the Third Anglo-Maratha War period?",
                         "Baji Rao II",
+                        "Shahu I",
                         "Bajirao I",
                         "Shivaji Maharaj",
-                        "Shahu I",
                         1
                 ));
 
                 questions.add(new Question(
                         "The Peshwa's headquarters was located at:",
                         "Pune",
-                        "Mumbai",
-                        "Nagpur",
                         "Nashik",
+                        "Nagpur",
+                        "Mumbai",
                         1
                 ));
 
                 questions.add(new Question(
                         "Which institution was founded by Dhondo Keshav Karve for women's education?",
+                        "Fergusson College",
                         "SNDT Women's University",
                         "Deccan College",
-                        "Fergusson College",
                         "University of Bombay",
-                        1
+                        2
                 ));
 
                 questions.add(new Question(
                         "Who was the first Indian woman to become a doctor trained in Western medicine from Maharashtra?",
-                        "Anandibai Joshi",
                         "Savitribai Phule",
-                        "Pandita Ramabai",
                         "Ramabai Ranade",
-                        1
+                        "Anandibai Joshi",
+                        "Pandita Ramabai",
+                        3
                 ));
 
                 questions.add(new Question(
                         "Which organization was founded by Jyotirao Phule to promote social equality?",
-                        "Satyashodhak Samaj",
-                        "Arya Samaj",
-                        "Brahmo Samaj",
                         "Servants of India Society",
-                        1
+                        "Brahmo Samaj",
+                        "Arya Samaj",
+                        "Satyashodhak Samaj",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Who founded the Servants of India Society?",
+                        "Agarkar",
                         "Gopal Krishna Gokhale",
                         "Tilak",
                         "Phule",
-                        "Agarkar",
-                        1
+                        2
                 ));
             }
 
             if (level == 6) {
                 questions.add(new Question(
                         "Which fort is associated with the historic encounter between Shivaji Maharaj and Afzal Khan?",
+                        "Shivneri",
                         "Pratapgad",
                         "Raigad",
-                        "Shivneri",
                         "Sinhagad",
-                        1
-                ));
-
-                questions.add(new Question(
-                        "Which Maratha administrative council consisted traditionally of eight ministers?",
-                        "Ashtapradhan",
-                        "Navaratna",
-                        "Panchayat",
-                        "Diwan-i-Kohi",
-                        1
-                ));
-
-                questions.add(new Question(
-                        "Who held the office of Peshwa during the Third Battle of Panipat?",
-                        "Balaji Baji Rao",
-                        "Bajirao I",
-                        "Madhavrao I",
-                        "Baji Rao II",
-                        1
-                ));
-
-                questions.add(new Question(
-                        "The Third Battle of Panipat was fought in:",
-                        "1757",
-                        "1761",
-                        "1764",
-                        "1775",
                         2
                 ));
 
                 questions.add(new Question(
+                        "Which Maratha administrative council consisted traditionally of eight ministers?",
+                        "Navaratna",
+                        "Panchayat",
+                        "Diwan-i-Kohi",
+                        "Ashtapradhan",
+                        4
+                ));
+
+                questions.add(new Question(
+                        "Who held the office of Peshwa during the Third Battle of Panipat?",
+                        "Baji Rao II",
+                        "Madhavrao I",
+                        "Bajirao I",
+                        "Balaji Baji Rao",
+                        4
+                ));
+
+                questions.add(new Question(
+                        "The Third Battle of Panipat was fought in:",
+                        "1775",
+                        "1757",
+                        "1764",
+                        "1761",
+                        4
+                ));
+
+                questions.add(new Question(
                         "Which Maratha leader is associated with the capture of Sinhagad in 1670?",
-                        "Tanaji Malusare",
                         "Baji Prabhu Deshpande",
                         "Murarbaji Deshpande",
                         "Netaji Palkar",
-                        1
+                        "Tanaji Malusare",
+                        4
                 ));
 
                 questions.add(new Question(
                         "Who founded the Bahishkrit Hitakarini Sabha?",
                         "B. R. Ambedkar",
                         "Jyotirao Phule",
-                        "Gopal Ganesh Agarkar",
                         "Shahu Maharaj",
+                        "Gopal Ganesh Agarkar",
                         1
                 ));
 
                 questions.add(new Question(
                         "Which Maharaja of Kolhapur supported social reforms and reservation for non-Brahmin communities?",
-                        "Shahu Maharaj",
-                        "Sayajirao Gaekwad",
-                        "Ranjit Singh",
                         "Krishnaraja Wadiyar",
-                        1
+                        "Shahu Maharaj",
+                        "Ranjit Singh",
+                        "Sayajirao Gaekwad",
+                        2
                 ));
 
                 questions.add(new Question(
@@ -3906,11 +3906,11 @@ public class QuestionBank {
 
                 questions.add(new Question(
                         "Which movement in Maharashtra is closely associated with Vinoba Bhave's Bhoodan campaign?",
-                        "Land-gift movement",
-                        "Swadeshi movement",
                         "Home Rule movement",
+                        "Swadeshi movement",
                         "Khilafat movement",
-                        1
+                        "Land-gift movement",
+                        4
                 ));
             }
         }
